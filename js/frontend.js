@@ -816,77 +816,7 @@ document.addEventListener("DOMContentLoaded", () => {
         closeOnEsc: true,
         innerSelector: ".m-menu__link"
       },
-      {
-        trigger: ".news-detail__content h3",
-        behavior: "activate",
-        activeClass: "active",
-      },
-      {
-        trigger: ".pagination-btn",
-        behavior: "activate",
-        activeClass: "active",
-      },
-      {
-        trigger: ".page-btn",
-        behavior: "activate",
-        activeClass: "active",
-      },
-      {
-        trigger: ".btn-register__cal",
-        target: ".popup-register__container",
-        behavior: "activate",
-        activeClass: "active",
-        closeOnOutside: true,
-        closeOnEsc: true,
-        innerSelector: ".contact-section__container"
-      },
-      {
-        trigger: ".btn-write-review",
-        target: ".popup-comment__container",
-        behavior: "toggle",
-        activeClass: "active",
-        closeOnOutside: true,
-        closeOnEsc: true,
-        innerSelector: ".popup-comment__content",
-        closeBtn: ".popup-comment__close"
-      },
-      {
-        trigger: ".tab-btn",
-        behavior: "activate",
-        groupSelector: ".tab-btn",
-        activeClass: "active",
-
-        onActiveChange: function (isActive, triggerEl) {
-          if (isActive) {
-            document.querySelectorAll('.tab-panel').forEach(panel => {
-              panel.classList.remove('active');
-            });
-
-            const targetId = triggerEl.getAttribute('data-target');
-
-            if (targetId) {
-              const targetPanel = document.querySelector(targetId);
-              if (targetPanel) {
-                targetPanel.classList.add('active');
-              }
-            }
-          }
-        }
-      },
-      {
-        trigger: ".btn-hide",
-        target: ".tab-panel__container",
-        behavior: "toggle",
-        activeClass: "hide",
-        onActiveChange: function (isActive, triggerEl, targetEl) {
-          if (isActive) {
-            triggerEl.innerText = "Xem thêm";
-          }
-          else {
-            triggerEl.innerText = "Ẩn đi";
-          }
-        }
-      }
+     
     ]);
     // 🟡 roll to the top
     initScrollToTop();

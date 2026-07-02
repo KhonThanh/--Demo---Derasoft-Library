@@ -1,97 +1,109 @@
-﻿<div class="container-f bg-primary ">
-    <div class="container-l flex center-ver header-bar jus-sb">
-        <div class="flex center-ver gap-10">
-            <div class="top-menu__iconcontact flex center-ver gap-10">
-                <div class="top-menu__iconcontact-item flex gap-10 item-padding-10">
-                    <div class="top-menu__iconcontact-icon flex center-ver center-hor">
-                        <img class="img-icon" src="./img/icon/phone.svg" alt="">
-                    </div>
-                    <p class="text-color-white">Hỗ trợ 24/7: (+84 94 2710025)</p>
+﻿    <div class="container-f bg-white border-bottom pos-rel header-container">
+            <div class="container-l center-ver jus-sb item-padding-10">
+                <div class="logo pos-rel flex center-ver">
+                    <img title="ThanhDev Library Layout" src="./img/logo/logo-top.svg" alt="ThanhDev Logo">
+                    <a href="../index.html" class="link-overlay" aria-label="Trang chủ ThanhDev"></a>
                 </div>
-                <div class="top-menu__iconcontact-item flex gap-10 item-padding-10">
-                    <div class="top-menu__iconcontact-icon flex center-ver center-hor">
-                        <img class="img-icon" src="./img/icon/envelope.svg" alt="">
+
+                <nav class="header-bottom__menu flex gap-20 center-ver">
+                    <div class="menu-container__item header-bottom__item">
+                        <a class="text-color-black bold" href="../intro.html">Giới thiệu</a>
                     </div>
-                    <p class="text-color-white">info@mpx.com</p>
+                    <div class="menu-container__item header-bottom__item drop-down pos-rel">
+                        <a class="text-color-black bold" href="javascript:void(0)">Sản phẩm</a>
+                        <ul class="menu-list flex flex-col">
+                            <li class="menu-leveltwo__container pos-rel">
+                                <a href="#">Giao diện Admin</a>
+                            </li>
+                            <li class="menu-leveltwo__container pos-rel">
+                                <a href="#">Website Bán Hàng</a>
+                                <ul class="menu-list__leveltwo flex flex-col">
+                                    <li><a href="#">Thương mại điện tử</a></li>
+                                    <li><a href="#">Trưng bày sản phẩm</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-leveltwo__container pos-rel">
+                                <a href="#">Chứng chỉ SSL</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-container__item header-bottom__item">
+                        <a class="text-color-black bold" href="javascript:void(0)">Dịch vụ</a>
+                    </div>
+                    <div class="menu-container__item header-bottom__item">
+                        <a class="text-color-black bold" href="javascript:void(0)">Tin tức</a>
+                    </div>
+                    <div class="menu-container__item header-bottom__item">
+                        <a class="text-color-black bold" href="javascript:void(0)">Hỗ trợ</a>
+                    </div>
+                </nav>
+
+                <div class="header-bottom__function flex gap-10 center-ver">
+                    <div class="search-box item-padding-10 border-radius-10 flex center-ver bg-white-secondary">
+                        <input type="text" placeholder="Tìm kiếm layout..."
+                            class="flex-1 border-none text-sm bg-white-secondary">
+                        <button class="search-btn">
+                            <div class="icon-md ratio-1x1"><img src="./img/icon/search.svg" alt="Search"
+                                    class="img-icon">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="cart-box pos-rel flex center-ver">
+                        <img class="icon-md" src="./img/icon/cart.svg" alt="Cart">
+                        <a href="javascript:void(0)" class="link-overlay" aria-label="Giỏ hàng"></a>
+                    </div>
+                    <div class="user-login active pos-rel flex center-ver">
+                        <img class="icon-md" src="./img/icon/user.svg" alt="User">
+                        <a href="javascript:void(0)" class="link-overlay" aria-label="Đăng nhập"></a>
+                    </div>
+                    <button class="menu-container__bar center-ver center-hor">
+                        <img class="icon-md" src="./img/icon/bars.svg" alt="Open Menu">
+                    </button>
                 </div>
+
+                <div class="m-menu flex flex-col pos-abs bg-white shadow-sm">
+                    <div class="m-menu__header flex flex-col gap-15 item-padding-20 pb-0">
+                        <div class="search-box border-radius-5 item-padding-10 flex center-ver bg-white-secondary fill-view">
+                            <input type="text" placeholder="Tìm kiếm..." class="flex-1 border-none bg-white-secondary">
+                            <button class="search-btn"><img class="icon-sm" src="./img/icon/search.svg"
+                                    alt="Search"></button>
+                        </div>
+                    </div>
+
+                    <div class="m-menu__root flex flex-col">
+                        <div class="m-menu__item flex flex-col active">
+                            <a href="javascript:void(0)" class="text-color-primary bold uppercase">Trang chủ</a>
+                        </div>
+
+                        <div class="m-menu__item flex flex-col">
+                            <a href="javascript:void(0)" class="text-color-deactive bold uppercase">Sản phẩm</a>
+
+                            <div class="m-submenu flex flex-col gap-10">
+                                <a href="javascript:void(0)" class="pl-15 text-sm font-medium">Giao diện Admin</a>
+
+                                <div class="m-submenu__item flex flex-col gap-5">
+                                    <a href="javascript:void(0)" class="pl-15 text-sm font-medium">Website Bán Hàng</a>
+
+                                    <div class="m-submenu__levelthree flex flex-col gap-10">
+                                        <a href="javascript:void(0)" class="pl-30 text-xs text-color-deactive">— Thương mại điện tử</a>
+                                        <a href="javascript:void(0)" class="pl-30 text-xs text-color-deactive">— Trưng bày sản phẩm</a>
+                                    </div>
+                                </div>
+
+                                <a href="javascript:void(0)" class="pl-15 text-sm font-medium">Chứng chỉ SSL</a>
+                            </div>
+                        </div>
+
+                        <div class="m-menu__item flex flex-col">
+                            <a href="javascript:void(0)" class="text-color-deactive bold uppercase">Dịch vụ</a>
+                        </div>
+
+                        <div class="m-menu__item flex flex-col">
+                            <a href="javascript:void(0)" class="text-color-deactive bold uppercase">Tin tức</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="top-menu__container center-ver pos-rel ">
-            <a href="javascript:void(0)" class="text-color-white">English ▾</a>
-            <div class="top-menu__list pos-abs bg-white z-index-1 item-padding-10 border-radius-5">
-                <a href="#">Tiếng việt</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-l  flex pos-rel header-bottom jus-sb item-padding-10">
-    <a href="../index.html" class="logo">
-        <img title="logo trang chủ" src="./img/logo/logo-top.webp" alt="">
-    </a>
-    <div class="flex gap-20 header-bottom__menu center-ver">
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../index.html">Trang chủ</a>
-        </div>
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../intro.html" data-match="intro">về mpx</a>
-        </div>
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../service.html" data-match="service">Dịch vụ</a>
-        </div>
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../solution.html" data-match="solution">Giải pháp</a>
-        </div>
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../product.html" data-match="product">sản phẩm</a>
-        </div>
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../casestudy.html" data-match="casestudy">case study</a>
-        </div>
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../knowledge.html" data-match="knowledge">Kiến thức</a>
-        </div>
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../news.html" data-match="news">tin tức</a>
-        </div>
-        <div class="header-bottom__item">
-            <a class="text-color-deactive uppercase bold" href="../contact.html" data-match="contact">liên hệ</a>
-        </div>
-    </div>
-    <div class=" flex gap-20 header-bottom__function ">
-        <div
-            class="cursor-pointer btn-register__cal bg-primary header-bottom__res flex center-ver gap-20 btn-padding border-radius-5">
-            <p class="uppercase text-color-white bold un-wrap">đặt lịch</p>
-            <div class="header-bottom__icon">
-                <img class="img-icon" src="./img/icon/arrow-right.svg" alt="icon-mui-ten">
-            </div>
-        </div>
-        <button class="menu-container__bar center-ver">
-            <img class="img-icon" src="./img/icon/bars.svg" alt="">
-        </button>
-    </div>
-    <div class="m-menu flex flex-col pos-abs bg-white">
-        <div class="m-menu__root">
-            <div class="m-menu__item flex flex-col active">
-                <a href="javascript:void(0)" class="text-color-deactive blod uppercase ">Trang chủ</a>
-            </div>
-            <div class="m-menu__item flex flex-col">
-                <a href="javascript:void(0)" class="text-color-deactive blod uppercase">Về mpx</a>
-            </div>
-            <div class="m-menu__item flex flex-col">
-                <a href="javascript:void(0)" class="text-color-deactive blod uppercase">Dịch vụ</a>
-            </div>
-            <div class="m-menu__item flex flex-col"><a href="javascript:void(0)"
-                    class="text-color-deactive blod uppercase">giải pháp</a></div>
-            <div class="m-menu__item flex flex-col"><a href="javascript:void(0)"
-                    class="text-color-deactive blod uppercase">sản phẩm</a></div>
-            <div class="m-menu__item flex flex-col"><a href="javascript:void(0)"
-                    class="text-color-deactive blod uppercase">case study</a></div>
-            <div class="m-menu__item flex flex-col"><a href="javascript:void(0)"
-                    class="text-color-deactive blod uppercase">kiến thức</a></div>
-            <div class="m-menu__item flex flex-col"><a href="javascript:void(0)"
-                    class="text-color-deactive blod uppercase">tin tức</a></div>
-            <div class="m-menu__item flex flex-col"><a href="javascript:void(0)"
-                    class="text-color-deactive blod uppercase">liên hệ</a></div>
-        </div>
-    </div>
-</div>

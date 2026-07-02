@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPX VN | Trang chủ</title>
+    <title>Thư viện | Trang chủ</title>
     <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="./img/banner/banner-home.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- <link rel="stylesheet" href="../css/style.min.css"> -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/custom.css">
@@ -21,712 +19,549 @@
 </head>
 
 <body>
-    <header class="container-f bg-black z-index-4" data-include="./component/header.html"></header>
+    <header class="header-section flex-col bg-white" data-include="./component/header.html"></header>
     <main class="container-f flex flex-col center-hor pos-rel">
-        <section class="container-f swiper slide-container js-slider-banner">
-            <div class=" swiper-wrapper js-slider-wrapper">
-                <div class="swiper-slide">
-                    <div class="home-banner__container container-f flex pos-rel center-hor">
-                        <div class="container-l home-banner__content flex flex-col gap-20 center-hor z-index-3">
-                            <h2 class="home-banner__title text-color-white bold">Giải pháp kỹ thuật cho sự kiện - triển
-                                lãm - quảng cáo hiện đại</h2>
-                            <p class="text-color-white home-banner__desc">Chuyên cung cấp các hệ thống sân khấu, giàn
-                                truss, gian hàng triển lãm, hộp đèn quảng cáo
-                                và giải pháp trưng bày sáng tạo với công nghệ mô-đun, kỹ thuật cơ khí chính xác và tiêu
-                                chuẩn quốc tế.</p>
-                            <div class="home-banner__function flex flex-wrap gap-20">
-                                <div
-                                    class="btn-padding text-color-white border-radius-5 cursor-pointer home-banner__btn bg-primary uppercase flex gap-20 un-wrap">
-                                    khám phá giải pháp MPX →</div>
-                                <div
-                                    class="btn-padding text-color-white border-radius-5 cursor-pointer home-banner__btn bg-primary uppercase  un-wrap">
-                                    Liên hệ tư vấn</div>
-                            </div>
+        <section class="hero-section container-f bg-white-secondary container-padding hidden-section">
+            <div
+                class="container-l center-ver jus-sb gap-20 bg-light-purple border-radius-10 item-padding-30 flex-wrap">
+                <div class="hero-content flex flex-col gap-20 col-section-2 item-padding-30">
+                    <span class="badge un-wrap text-color-primary bold item-padding-5-10 flex gap-5 center-ver">
+                        <img src="./img/icon/verified.svg" alt="Verified" class="icon-sm">
+                        Thị trường số uy tín số 1
+                    </span>
+
+                    <h1 class="hero-title">Kho Thư Viện Layout & Chứng Chỉ SSL Cao Cấp</h1>
+                    <p class="hero-text text-color-black">
+                        Xây dựng nền tảng số chuyên nghiệp với kho giao diện độc quyền và giải pháp bảo mật tối ưu từ
+                        TrustMarket. Bắt đầu ngay hôm nay để nâng tầm doanh nghiệp.
+                    </p>
+
+                    <form class="hero-search-form flex center-ver bg-white border-radius-5 gap-10 item-padding-10">
+                        <img src="./img/icon/search.svg" alt="Search" class="icon-sm">
+                        <input type="text" placeholder="Tìm kiếm layout, plugin, hoặc SSL..."
+                            class="flex-1 border-none bg-none">
+                        <button type="submit" class="btn-padding bg-primary text-color-white border-radius-5 bold">Tìm
+                            kiếm</button>
+                    </form>
+
+                    <div class="hero-trust-features flex gap-20 center-ver mt-10">
+                        <div class="trust-item flex center-ver gap-5">
+                            <img src="./img/icon/check-circle.svg" alt="Check" class="icon-sm">
+                            <span class="text-sm text-color-black">10,000+ Sản phẩm</span>
                         </div>
-                        <div class="home-banner__blending pos-abs z-index-1">
-                            <img class="img-content" src="./img/banner-blending/Background.png" alt="">
+                        <div class="trust-item flex center-ver gap-5">
+                            <img src="./img/icon/check-circle.svg" alt="Check" class="icon-sm">
+                            <span class="text-sm text-color-black">Hỗ trợ 24/7</span>
                         </div>
-                        <div class="home-banner__background pos-abs z-index-minus-1">
-                            <img class="img-content" src="./img/banner/banner-home.webp" alt="Banner 1">
-                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image pos-rel col-section-2">
+                    <div class="hero-image__img ratio-1x1 ">
+                        <img src="./img/hero/hero-image.svg" alt="Hero Image" class="img-cover">
+                    </div>
+                    <div class="hero-floating-icon icon-shield pos-abs  border-radius-5 ">
+                        <img src="./img/icon/sheld.svg" alt="Shield Icon" class="img-icon">
+                    </div>
+
+                    <div class="hero-floating-icon icon-code pos-abs  border-radius-5">
+                        <img src="./img/icon/code.svg" alt="Code Icon" class="img-icon">
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination custom-dots"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </section>
-        <section class="services-section bg-white-secondary container-f container-padding flex center-hor">
-            <div class="container-l flex flex-col gap-20">
-                <h1 class="section-title text-center bold uppercase">Dịch vụ chuyên nghiệp</h1>
-                <p class="text-center">Demo: chuyên cung cấp các hệ thống sân khấu, giàn truss, gian hàng triễn lảm, hộp
-                    đèn quảng cáo và
-                    giải pháp trưng
-                    bày sáng tạo với công nghệ module, kỹ thuật cơ khí chính xác và tiêu chuẩn quốc tế</p>
-                <div class="service-slider-wrapper pos-rel js-slider-wrapper">
-
-                    <div class="service-list fill-view swiper js-slider-grid-to-slide">
-                        <div class="swiper-wrapper ">
-
-                            <article class="swiper-slide col-3 ">
-                                <div
-                                    class="service-item__content border-radius-5 gap-20 bg-white jus-sb flex flex-col pos-rel item-padding-30 fill-view center-ver center-hor">
-                                    <div class="icon-box-sm ">
-                                        <img src="./img/icon/click-icon.svg" alt="SEO Icon" class="icon-img">
-                                    </div>
-                                    <div class="service-content flex flex-col gap-10 flex-1">
-                                        <h3 class="service-name text-center bold fill-view">
-                                            SEO Tổng thể & AI SEO
-                                        </h3>
-                                        <p class="service-text text-center fill-view clamp-text">
-                                            Giải pháp SEO toàn diện từ các phương pháp Evergreen SEO đến chiến lược AI
-                                            SEO
-                                            tiên tiến, tối ưu cho Google AI Mode và AI Search (SearchGPT,
-                                            Perplexity,...).
-                                            Chuyển hóa website thành cỗ máy thu hút khách hàng tự động cho cả thị trường
-                                            Việt Nam và Quốc tế (US, EU, Canada, AU). Tối ưu toàn diện với Content
-                                            Engin...
-                                        </p>
-
-                                        <ul class="check-list clamp-textfill-view">
-                                            <li>Chiến lược SEO AI</li>
-                                            <li>Tối ưu GEO (Generative Engine Optimization)</li>
-                                            <li>Content Engine đa ngôn ngữ</li>
-                                            <li>International Technical SEO</li>
-                                            <li>.....</li>
-                                        </ul>
-                                    </div>
-                                    <a href="javascript:void(0)" class="pos-abs cover-all"
-                                        aria-label="SEO Tổng thể"></a>
-                                    <button
-                                        class="btn-padding text-color-white border-radius-5 cursor-point home-banner__btn bg-primary uppercase flex gap-20 un-wrap">TÌM
-                                        HIỂU THÊM →</button>
-                                </div>
-                            </article>
-                            <article class="swiper-slide col-3 ">
-                                <div
-                                    class="service-item__content border-radius-5 gap-20 bg-white jus-sb flex flex-col pos-rel item-padding-30 fill-view center-ver center-hor">
-                                    <div class="icon-box-sm">
-                                        <img src="./img/icon/arrow-pointer.svg" alt="Inbound Marketing Icon"
-                                            class="icon-img">
-                                    </div>
-                                    <div class="service-content flex flex-col gap-10 flex-1">
-                                        <h3 class="service-name text-center bold fill-view">
-                                            AI SEO Driven Inbound Marketing
-                                        </h3>
-                                        <p class="service-text text-center fill-view clamp-text">
-                                            Chiến lược tích hợp toàn diện: AI SEO, Content Marketing đa thị trường,
-                                            Email
-                                            Marketing cá nhân hóa, Remarketing thông minh, Paid Ads và Conversion
-                                            Optimization. Xây dựng hệ thống tự động thu hút và nuôi dưỡng khách hàng
-                                            tiềm
-                                            năng xuyên suốt hành trình.
-                                        </p>
-
-                                        <ul class="check-list clamp-textfill-view">
-                                            <li>Email Marketing AI</li>
-                                            <li>Remarketing & Paid Ads</li>
-                                            <li>Conversion AI (UX Optimization, Landing Page, Form Optimization)</li>
-                                            <li>.....</li>
-                                        </ul>
-                                    </div>
-                                    <a href="javascript:void(0)" class="pos-abs cover-all"
-                                        aria-label="AI SEO Driven Inbound Marketing"></a>
-                                    <button
-                                        class="btn-padding text-color-white border-radius-5 cursor-point home-banner__btn bg-primary uppercase flex gap-20 un-wrap">TÌM
-                                        HIỂU THÊM →</button>
-                                </div>
-                            </article>
-                            <article class="swiper-slide col-3 ">
-                                <div
-                                    class="service-item__content border-radius-5 gap-20 bg-white jus-sb flex flex-col pos-rel item-padding-30 fill-view center-ver center-hor">
-                                    <div class="icon-box-sm">
-                                        <img src="./img/icon/code.svg" alt="Tư vấn Đào tạo AI Icon" class="icon-img">
-                                    </div>
-                                    <div class="service-content flex flex-col gap-10 flex-1">
-                                        <h3 class="service-name text-center bold fill-view">
-                                            Dịch vụ Tư vấn & Đào tạo AI SEO
-                                        </h3>
-                                        <p class="service-text text-center fill-view clamp-text">
-                                            Đào tạo đội ngũ in-house và chuyển giao quy trình SEO & AI SEO hoàn chỉnh.
-                                            Xây
-                                            dựng chiến lược SEO bền vững trong kỷ nguyên AI Search, giúp doanh nghiệp tự
-                                            chủ
-                                            trong việc mở rộng thị trường quốc tế.
-                                        </p>
-
-                                        <ul class="check-list clamp-textfill-view">
-                                            <li>AI SEO Audit & Strategy</li>
-                                            <li>Đào tạo đội ngũ in-house</li>
-                                            <li>Chuyển giao quy trình & Template</li>
-                                            <li>Giám sát & Tối ưu</li>
-                                            <li>.....</li>
-                                        </ul>
-                                    </div>
-                                    <a href="javascript:void(0)" class="pos-abs cover-all"
-                                        aria-label="Dịch vụ Tư vấn & Đào tạo AI SEO"></a>
-                                    <button
-                                        class="btn-padding text-color-white border-radius-5 cursor-point home-banner__btn bg-primary uppercase flex gap-20 un-wrap">TÌM
-                                        HIỂU THÊM →</button>
-                                </div>
-                            </article>
-                            <article class="swiper-slide col-3 ">
-                                <div
-                                    class="service-item__content border-radius-5 gap-20 bg-white jus-sb flex flex-col pos-rel item-padding-30 fill-view center-ver center-hor">
-                                    <div class="icon-box-sm ">
-                                        <img src="./img/icon/click-icon.svg" alt="SEO Icon" class="icon-img">
-                                    </div>
-                                    <div class="service-content flex flex-col gap-10 flex-1">
-                                        <h3 class="service-name text-center bold fill-view">
-                                            SEO Tổng thể & AI SEO
-                                        </h3>
-                                        <p class="service-text text-center fill-view clamp-text">
-                                            Giải pháp SEO toàn diện từ các phương pháp Evergreen SEO đến chiến lược AI
-                                            SEO
-                                            tiên tiến, tối ưu cho Google AI Mode và AI Search (SearchGPT,
-                                            Perplexity,...).
-                                            Chuyển hóa website thành cỗ máy thu hút khách hàng tự động cho cả thị trường
-                                            Việt Nam và Quốc tế (US, EU, Canada, AU). Tối ưu toàn diện với Content
-                                            Engin...
-                                        </p>
-
-                                        <ul class="check-list clamp-textfill-view">
-                                            <li>Chiến lược SEO AI</li>
-                                            <li>Tối ưu GEO (Generative Engine Optimization)</li>
-                                            <li>Content Engine đa ngôn ngữ</li>
-                                            <li>International Technical SEO</li>
-                                            <li>.....</li>
-                                        </ul>
-                                    </div>
-                                    <a href="javascript:void(0)" class="pos-abs cover-all"
-                                        aria-label="SEO Tổng thể"></a>
-                                    <button
-                                        class="btn-padding text-color-white border-radius-5 cursor-point home-banner__btn bg-primary uppercase flex gap-20 un-wrap">TÌM
-                                        HIỂU THÊM →</button>
-                                </div>
-                            </article>
-                            <article class="swiper-slide col-3 ">
-                                <div
-                                    class="service-item__content border-radius-5 gap-20 bg-white jus-sb flex flex-col pos-rel item-padding-30 fill-view center-ver center-hor">
-                                    <div class="icon-box-sm">
-                                        <img src="./img/icon/arrow-pointer.svg" alt="Inbound Marketing Icon"
-                                            class="icon-img">
-                                    </div>
-                                    <div class="service-content flex flex-col gap-10 flex-1">
-                                        <h3 class="service-name text-center bold fill-view">
-                                            AI SEO Driven Inbound Marketing
-                                        </h3>
-                                        <p class="service-text text-center fill-view clamp-text">
-                                            Chiến lược tích hợp toàn diện: AI SEO, Content Marketing đa thị trường,
-                                            Email
-                                            Marketing cá nhân hóa, Remarketing thông minh, Paid Ads và Conversion
-                                            Optimization. Xây dựng hệ thống tự động thu hút và nuôi dưỡng khách hàng
-                                            tiềm
-                                            năng xuyên suốt hành trình.
-                                        </p>
-
-                                        <ul class="check-list clamp-textfill-view">
-                                            <li>Email Marketing AI</li>
-                                            <li>Remarketing & Paid Ads</li>
-                                            <li>Conversion AI (UX Optimization, Landing Page, Form Optimization)</li>
-                                            <li>.....</li>
-                                        </ul>
-                                    </div>
-                                    <a href="javascript:void(0)" class="pos-abs cover-all"
-                                        aria-label="AI SEO Driven Inbound Marketing"></a>
-                                    <button
-                                        class="btn-padding text-color-white border-radius-5 cursor-point home-banner__btn bg-primary uppercase flex gap-20 un-wrap">TÌM
-                                        HIỂU THÊM →</button>
-                                </div>
-                            </article>
-                            <article class="swiper-slide col-3 ">
-                                <div
-                                    class="service-item__content border-radius-5 gap-20 bg-white jus-sb flex flex-col pos-rel item-padding-30 fill-view center-ver center-hor">
-                                    <div class="icon-box-sm">
-                                        <img src="./img/icon/code.svg" alt="Tư vấn Đào tạo AI Icon" class="icon-img">
-                                    </div>
-                                    <div class="service-content flex flex-col gap-10 flex-1">
-                                        <h3 class="service-name text-center bold fill-view">
-                                            Dịch vụ Tư vấn & Đào tạo AI SEO
-                                        </h3>
-                                        <p class="service-text text-center fill-view clamp-text">
-                                            Đào tạo đội ngũ in-house và chuyển giao quy trình SEO & AI SEO hoàn chỉnh.
-                                            Xây
-                                            dựng chiến lược SEO bền vững trong kỷ nguyên AI Search, giúp doanh nghiệp tự
-                                            chủ
-                                            trong việc mở rộng thị trường quốc tế.
-                                        </p>
-
-                                        <ul class="check-list clamp-textfill-view">
-                                            <li>AI SEO Audit & Strategy</li>
-                                            <li>Đào tạo đội ngũ in-house</li>
-                                            <li>Chuyển giao quy trình & Template</li>
-                                            <li>Giám sát & Tối ưu</li>
-                                            <li>.....</li>
-                                        </ul>
-                                    </div>
-                                    <a href="javascript:void(0)" class="pos-abs cover-all"
-                                        aria-label="Dịch vụ Tư vấn & Đào tạo AI SEO"></a>
-                                    <button
-                                        class="btn-padding text-color-white border-radius-5 cursor-point home-banner__btn bg-primary uppercase flex gap-20 un-wrap">TÌM
-                                        HIỂU THÊM →</button>
-                                </div>
-                            </article>
-                        </div>
+        <section class="archive-section container-f container-padding">
+            <div class="container-l flex-col gap-20">
+                <div class="archive-header">
+                    <h2 class="archive-title">layout Nổi Bật</h2>
+                    <div class="archive-description flex flex-warp gap-20 jus-sb center-ver">
+                        <p class="text-color-deactive text-sm">Khám phá các giao diện website cao cấp và giải pháp bảo
+                            mật tối ưu cho doanh nghiệp.</p>
+                        <a href="javascript:void(0)" class="btn-padding bg-primary border-radius-5 text-color-white">
+                            Xem tất cả →
+                        </a>
                     </div>
-                    <div class="swiper-button-prev custom-prev-btn"></div>
-                    <div class="swiper-button-next custom-next-btn"></div>
-
                 </div>
+                <div class="archive-container flex flex-wrap gap-20">
+                    <article class="archive-item archive-item--large pos-rel card hover-border-primary">
+                        <div class="card-img__wrap pos-rel flex-1 overflow-hidden">
+                            <span
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 z-index-5 pos-abs">Bán
+                                chạy</span>
+                            <img src="./img/archive/archive-1.svg" alt="Nexus Pro" class="img-content">
+                        </div>
+                        <div class="card-content flex flex-col gap-10 item-padding-30 flex-1 center-hor">
+                            <span class="text-xs bold text-color-primary">Admin Dashboard</span>
+                            <h3 class="card-title text-lg">Nexus Pro – Ultimate Admin & SaaS Template</h3>
+                            <p class="text-sm text-color-deactive line-clamp-3">Giải pháp hoàn hảo cho các dự án quản
+                                trị với hơn 100+ component, dark/light mode và tối ưu hiệu suất tuyệt đối.</p>
+                            <div class="card-footer flex jus-sb center-ver ">
+                                <span class="price bold text-color-black">₫1,200,000</span>
+                                <div class="add-shopping__icon ratio-1x1">
+                                    <img src="./img/icon/add-bag.svg" alt="Star" class="ìmg-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="link-overlay" aria-label="Xem chi tiết Nexus Pro"></a>
+                    </article>
+                    <article class="archive-item card archive-item--small flex-col hover-border-primary">
+                        <div class="card-header pos-rel hover-border-primary overflow-hidden">
+                            <img src="./img/archive/archive-1.svg" alt="Archive 1" class="img-content">
+                            <a href="javascript:void(0)" class="link-overlay" aria-label="Xem chi tiết"></a>
+                            <p
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 pos-abs z-index-5">
+                                Premium</p>
+                        </div>
+                        <div class="card-body flex flex-col gap-10 ">
+                            <p class="text-color-primary">E-commerce</p>
+                            <h3 class="card-title text-color-black">Aura Store - Modern E-com Theme</h3>
+                        </div>
+                        <div class="card-footer flex gap-10  center-ver jus-sb">
+                            <div class="price text-color-black bold">₫1,200,000</div>
+                            <div class="add-shopping__icon ratio-1x1">
+                                <img src="./img/icon/add-bag.svg" alt="Star" class="ìmg-icon">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="link-overlay" aria-label="Xem chi tiết"></a>
+                    </article>
+                    <article class="archive-item card archive-item--small flex-col hover-border-primary">
+                        <div class="card-header pos-rel hover-border-primary overflow-hidden">
+                            <img src="./img/archive/archive-1.svg" alt="Archive 1" class="img-content">
+                            <a href="javascript:void(0)" class="link-overlay" aria-label="Xem chi tiết"></a>
+                            <p
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 pos-abs z-index-5">
+                                Premium</p>
+                        </div>
+                        <div class="card-body flex flex-col gap-10 ">
+                            <p class="text-color-primary">E-commerce</p>
+                            <h3 class="card-title text-color-black">Aura Store - Modern E-com Theme</h3>
+                        </div>
+                        <div class="card-footer flex gap-10  center-ver jus-sb">
+                            <div class="price text-color-black bold">₫1,200,000</div>
+                            <div class="add-shopping__icon ratio-1x1">
+                                <img src="./img/icon/add-bag.svg" alt="Star" class="ìmg-icon">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="link-overlay" aria-label="Xem chi tiết"></a>
+                    </article>
+                    <article class="archive-item card archive-item--small flex-col hover-border-primary">
+                        <div class="card-header pos-rel hover-border-primary overflow-hidden">
+                            <img src="./img/archive/archive-1.svg" alt="Archive 1" class="img-content">
+                            <a href="javascript:void(0)" class="link-overlay" aria-label="Xem chi tiết"></a>
+                            <p
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 pos-abs z-index-5">
+                                Premium</p>
+                        </div>
+                        <div class="card-body flex flex-col gap-10 ">
+                            <p class="text-color-primary">E-commerce</p>
+                            <h3 class="card-title text-color-black">Aura Store - Modern E-com Theme</h3>
+                        </div>
+                        <div class="card-footer flex gap-10  center-ver jus-sb">
+                            <div class="price text-color-black bold">₫1,200,000</div>
+                            <div class="add-shopping__icon ratio-1x1">
+                                <img src="./img/icon/add-bag.svg" alt="Add to Cart" class="ìmg-icon">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="link-overlay" aria-label="Xem chi tiết"></a>
+                    </article>
+                    <article
+                        class="archive-item archive-item--small card cta-card pos-rel bg-primary text-center gap-15 flex flex-col center-ver center-hor item-padding-30 text-center">
+                        <div class="icon-box-circle flex center-hor center-ver">
+                            <img src="./img/icon/store-white.svg" alt="Store Icon" class="icon-md">
+                        </div>
+                        <div class="flex flex-col gap-10 pos-rel z-10">
+                            <h3 class="text-color-white text-lg bold">Khám Phá Toàn Bộ</h3>
+                            <p class="text-color-white text-sm opacity-80">Hàng ngàn mẫu thiết kế đang chờ bạn.</p>
+                        </div>
+                        <button
+                            class="btn-padding bg-white text-color-primary border-radius-5 bold pos-rel z-10 mt-10 cursor-pointer">
+                            Vào Thư Viện
+                        </button>
+                        <a href="javascript:void(0)" class="link-overlay" aria-label="Vào thư viện"></a>
+                    </article>
+                </div>
+            </div>
         </section>
-        <section class="container-f container-padding flex center-hor bg-achievement pos-rel">
-            <div class="container-l achievement-content flex flex-col gap-30 center-hor pos-rel z-index-2">
-                <div class="achievement-header flex flex-col gap-10 center-hor">
-                    <h2 class="section-title achievement-title text-center text-color-white bold uppercase">
-                        Thành tựu nổi bật của MPX
-                    </h2>
-                    <p class="achievement-desc text-center text-color-white">
-                        Demo: chuyên cung cấp các hệ thống sân khấu, giàn truss, gian hàng triễn lảm, hộp đèn quảng cáo
-                        và giải pháp trưng bày sáng tạo với công nghệ module, kỹ thuật cơ khí chính xác và tiêu chuẩn
-                        quốc tế
+        <section class="ssl-solution-section container-f container-padding bg-white hidden-section">
+            <div
+                class="container-l flex flex-col center-hor center-ver bg-white-secondary border-radius-10 item-padding-40 gap-30 border-light">
+                <div class="section-header flex flex-col center-hor text-center gap-10 col-8">
+                    <div class="border-radius-50 ssl-solution__img ratio-1x1 overflow-hidden">
+                        <img src="./img/icon/lock-primary.svg" alt="SSL Lock" class="icon-sm">
+                    </div>
+                    <h2 class="section-title text-lg">Giải pháp Bảo mật SSL</h2>
+                    <p class="text-color-deactive text-sm line-height-1-6">
+                        Bảo vệ website và xây dựng niềm tin với khách hàng bằng các chứng chỉ SSL hàng đầu thế giới,
+                        được cấp phát nhanh chóng và quản lý dễ dàng.
                     </p>
                 </div>
-                <div class="bg-white achievement-stats-box border-radius-5 padding-20 flex flex-wrap gap-20 center-hor">
-                    <div class="stat-item item-padding-40 col-4 flex flex-col center-hor center-ver gap-10">
-                        <p class="stat-value bold">12</p>
-                        <p class="stat-label uppercase">Năm thành lập</p>
-                    </div>
-                    <div class="stat-item item-padding-40 col-4 flex flex-col center-hor center-ver gap-10">
-                        <p class="stat-value bold">20+</p>
-                        <p class="stat-label uppercase">Sự kiện/Tháng</p>
-                    </div>
-                    <div class="stat-item item-padding-40 col-4 flex flex-col center-hor center-ver gap-10">
-                        <p class="stat-value bold">200+</p>
-                        <p class="stat-label uppercase">Nhân sự chuyên môn</p>
-                    </div>
-                    <div class="stat-item item-padding-40 col-4 flex flex-col center-hor center-ver gap-10">
-                        <p class="stat-value bold">20,000m²</p>
-                        <p class="stat-label uppercase">Diện tích nhà máy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="home-banner__blending pos-abs z-index-1">
-                <img class="img-content" src="./img/banner-blending/Background.png" alt="">
-            </div>
-            <div class="home-banner__background pos-abs z-index-minus-1">
-                <img class="img-content" src="./img/banner/banner-home.webp" alt="Banner 1">
-            </div>
-        </section>
-        <section class="container-f container-padding flex center-hor bg-white-secondary">
-            <div class="container-l flex flex-col gap-30">
-                <div class="flex flex-col gap-10 center-hor">
-                    <h2 class="section-title text-center bold uppercase">Các dự án tiêu biểu của MPX</h2>
-                    <p class="text-center">Demo: chuyên cung cấp các hệ thống sân khấu, giàn truss, gian hàng triển
-                        lãm...</p>
-                </div>
-                <div class="project-slider-wrapper pos-rel js-slider-wrapper">
 
-                    <div class="swiper-button-prev custom-prev-btn"></div>
-                    <div class="swiper-button-next custom-next-btn"></div>
+                <!-- Khối 3 Card Tính năng -->
+                <div class="ssl-features-grid flex flex-wrap gap-20">
 
-                    <div class="project-swiper fill-view swiper js-slider-4cols">
-                        <div class="swiper-wrapper ">
-                            <article class="swiper-slide col-4">
-                                <div class="project-item bg-white flex flex-col pos-rel border-radius-5">
-                                    <div class="project-item__img ">
-                                        <img src="./img/news/news.jpg" alt="Project" class="img-content">
-                                    </div>
-                                    <div class="project-item__content item-padding-20 flex flex-col gap-10">
-                                        <h3 class="bold uppercase">MPX ECO-FLOOR LITE (INDOOR EVENTS)</h3>
-                                        <p class="clamp-text">Demo: chuyên cung cấp các hệ thống sân
-                                            khấu, giàn truss, gian hàng triễn lảm, hộp đèn quảng cáo và giải pháp trưng
-                                            bày sáng tạo với công nghệ module, kỹ thuật cơ khí chính xác và tiêu chuẩn
-                                            quốc
-                                            tế</p>
-                                        <button
-                                            class="project-btn btn-padding border-radius-5 cursor-point home-banner__btn bg-primary uppercase flex gap-20 un-wrap">
-                                            <p class="text-color-white">Xem chi tiết</p>
-                                            <p class="text-color-white">➔</p>
-                                        </button>
-                                    </div>
-                                    <a href="javascript:void(0)" class="pos-abs cover-all" aria-label="các dự án"></a>
-                                </div>
-                            </article>
+                    <article class="ssl-card card col-3 bg-white item-padding-20 flex gap-15 ">
+                        <div class="border-radius-10 ssl-card__img bg-light-green overflow-hidden ratio-1x1">
+                            <img src="./img/icon/shield-green.svg" alt="Bảo mật" class="icon-content">
                         </div>
-
-                        <div class="swiper-pagination custom-dots"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container-f container-padding flex center-hor bg-white-secondary">
-            <div class="container-l flex flex-col gap-30">
-                <div class="container-m flex flex-col gap-10 center-hor">
-                    <h2 class="section-title text-center bold uppercase">Khách hàng tiểu biểu của mpx</h2>
-                    <p class="text-center">Demo: chuyên cung cấp các hệ thống sân khấu, giàn truss, gian hàng triễn lảm,
-                        hộp đèn quảng cáo và giải pháp trưng
-                        bày sáng tạo với công nghệ module, kỹ thuật cơ khí chính xác và tiêu chuẩn quốc tế</p>
-                </div>
-                <div class="logo-brand-wrapper pos-rel js-slider-wrapper">
-
-                    <div class="swiper-button-prev custom-prev-btn"></div>
-                    <div class="swiper-button-next custom-next-btn"></div>
-
-                    <div class="logo-brand__swiper fill-view swiper js-slider-logo">
-                        <div class="swiper-wrapper ">
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/sapo.png" alt="sapo">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/viettiles.png" alt="viettiles">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/megamed.png" alt="megamed">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/samcovina.png" alt="samcovina">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/vinhgia.png" alt="vinhgia">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/office.png" alt="office">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/catuong.png" alt="catuong">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/vietmoney.png" alt="vietmoney">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/insee.png" alt="insee">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/generali.png" alt="generali">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/bambo.png" alt="bambo">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/apolat.png" alt="apolat">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/pops.png" alt="pops">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/toto.png" alt="toto">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide col-5">
-                                <div class="logo-brand__item padding-10 pos-rel">
-                                    <img class="img-content" src="./img/brand/vinamilk.png" alt="vinamilk">
-                                    <a class="pos-abs cover-all" href="javascript:void(0)"></a>
-                                </div>
-                            </div>
+                        <div class="ssl-card-content flex flex-col gap-5">
+                            <h4 class="text-sm bold text-color-black">Bảo Mật Tuyệt Đối</h4>
+                            <p class="text-xs text-color-deactive line-height-1-5">Xác thực danh tính mạnh mẽ, bảo vệ dữ
+                                liệu truyền tải khỏi mọi rủi ro đánh cắp.</p>
                         </div>
-                        <div class="swiper-pagination custom-dots"></div>
-                    </div>
+                    </article>
+
+                    <article class="ssl-card card col-3 bg-white item-padding-20 flex gap-15 ">
+                        <div class="border-radius-10 ssl-card__img bg-light-green overflow-hidden ratio-1x1r">
+                            <img src="./img/icon/speed-primary.svg" alt="Tốc độ" class="icon-content">
+                        </div>
+                        <div class="ssl-card-content flex flex-col gap-5">
+                            <h4 class="text-sm bold text-color-black">Cấp Phát Trong 5 Phút</h4>
+                            <p class="text-xs text-color-deactive line-height-1-5">Quy trình tự động hóa giúp bạn nhận
+                                và cài đặt chứng chỉ ngay lập tức.</p>
+                        </div>
+                    </article>
+
+                    <article class="ssl-card card col-3 bg-white item-padding-20 flex gap-15 ">
+                        <div class="border-radius-10 ssl-card__img bg-light-green overflow-hidden ratio-1x1">
+                            <img src="./img/icon/encryption-blue.svg" alt="Mã hóa" class="icon-content">
+                        </div>
+                        <div class="ssl-card-content flex flex-col gap-5">
+                            <h4 class="text-sm bold text-color-black">Mã Hóa 256-bit</h4>
+                            <p class="text-xs text-color-deactive line-height-1-5">Tiêu chuẩn mã hóa cao cấp nhất hiện
+                                nay, tương thích với 99.9% trình duyệt.</p>
+                        </div>
+                    </article>
 
                 </div>
+
+                <a href="javascript:void(0)"
+                    class="ssl-solution__CTA card item-padding-10-20 bg-white border-radius-10 bold text-color-black flex center-ver gap-10 cursor-pointer ">
+                    Xem Bảng Giá SSL
+                    <span class="text-lg">&rarr;</span>
+                </a>
+
             </div>
         </section>
-        <section class="container-f container-padding flex center-hor bg-black pos-rel">
-            <div class="container-l flex flex-col gap-30">
-                <div class=" flex flex-col gap-10 center-hor z-index-2 guest-comment__title">
-                    <h2 class="section-title bold uppercase text-color-white">khách hàng ấn tượng gì về MPX</h2>
+        <section class="features-section container-f bg-white-secondary container-padding hidden-section">
+            <div class="container-l flex-col center-hor gap-20 item-padding-40-20 bg-light-blue border-radius-10">
+                <div class="section-header flex flex-col center-hor text-center gap-15">
+                    <h2 class="section-title">Vì sao hàng ngàn doanh nghiệp chọn TrustMarket?</h2>
                     <div class="title-border-bottom"></div>
                 </div>
-                <div class="guest-comment__wrapper pos-rel js-slider-wrapper z-index-2">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="guest-comment__swiper js-slider-3cols fill-view swiper z-index-2">
-                        <div class="swiper-wrapper ">
-                            <div class="swiper-slide col-3">
-                                <div
-                                    class="guest-comment__item item-padding-20 border-radius-5 flex flex-col pos-rel bg-white gap-10">
-                                    <div class="guest-comment__icon">
-                                        <img src="./img/icon/note.svg" class="ing-content" alt="">
-                                    </div>
-                                    <div class="guest-comment__content flex-col flex gap-10">
-                                        <b class="capitalize">anh đã làm việc với nhiều agency cũng như</b>
-                                        <p class="clamp-text guest-desc">Cá nhân thì thấy được sự chuyên nghiệp, kế bên
-                                            chuyện là họ rất nhiệt tình trong việc hỗ trợ</p>
-                                        <p class="text-right">Xem thêm ▸</p>
-                                    </div>
-                                    <div class="flex gap-10">
-                                        <div class="rate-star pos-rel">
-                                            <img src="./img/icon/star-gray.svg" class="fill-view img-content" alt="">
-                                            <img src="./img/icon/star-yellow.svg"
-                                                class="fill-view pos-abs star-active img-content" alt="">
-                                        </div>
-                                        <div class="rate-star pos-rel">
-                                            <img src="./img/icon/star-gray.svg" class="fill-view img-content" alt="">
-                                            <img src="./img/icon/star-yellow.svg"
-                                                class="fill-view pos-abs star-active img-content" alt="">
-                                        </div>
-                                        <div class="rate-star pos-rel">
-                                            <img src="./img/icon/star-gray.svg" class="fill-view img-content" alt="">
-                                            <img src="./img/icon/star-yellow.svg"
-                                                class="fill-view pos-abs star-active img-content" alt="">
-                                        </div>
-                                        <div class="rate-star pos-rel">
-                                            <img src="./img/icon/star-gray.svg" class="fill-view img-content" alt="">
-                                            <img src="./img/icon/star-yellow.svg"
-                                                class="fill-view pos-abs star-active img-content" alt="">
-                                        </div>
-                                        <div class="rate-star pos-rel">
-                                            <img src="./img/icon/star-gray.svg" class="fill-view img-content" alt="">
-                                            <img src="./img/icon/star-yellow.svg"
-                                                class="fill-view pos-abs star-active img-content" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="user-container flex gap-10 center-ver">
-                                        <div class="user-avatar bg-primary item-padding-10 flex center-ver center-hor">
-                                            <img src="./img/icon/user.svg" alt="">
-                                        </div>
-                                        <div class="user-info flex flex-col">
-                                            <b class="capitalize">Mr. Tạ Luân</b>
-                                            <p class="capitalize">quản lý marketing</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="features-grid flex flex-wrap gap-20 ">
+                    <article class="feature-card col-4 card bg-white flex-col gap-15 item-padding-30">
+                        <div class="feature-card__item ratio-1x1 border-radius-10">
+                            <img src="./img/icon/code-white.svg" alt="Code" class="icon-content">
                         </div>
-                    </div>
-                </div>
-                <div class="home-banner__blending pos-abs z-index-1">
-                    <img class="img-content" src="./img/banner-blending/Background.png" alt="">
-                </div>
-                <div class="home-banner__background pos-abs z-index-minus-1">
-                    <img class="img-content" src="./img/banner/banner-home.webp" alt="Banner 1">
+                        <h4 class="text-md bold text-color-black">100% Mã nguồn sạch & Chuẩn SEO</h4>
+                        <p class="text-sm text-color-deactive line-height-1-5">Toàn bộ layout được kiểm duyệt gắt gao,
+                            tối ưu tốc độ tải trang và cấu trúc dữ liệu Google.</p>
+                    </article>
+                    <article class="feature-card col-4 card bg-white flex-col gap-15 item-padding-30">
+                        <div class="feature-card__item ratio-1x1 border-radius-10">
+                            <img src="./img/icon/support-white.svg" alt="Support" class="icon-content">
+                        </div>
+                        <h4 class="text-md bold text-color-black">Hỗ trợ kỹ thuật 24/7</h4>
+                        <p class="text-sm text-color-deactive line-height-1-5">Đội ngũ chuyên gia luôn sẵn sàng giải đáp
+                            thắc mắc và hỗ trợ cài đặt cho mọi khách hàng.</p>
+                    </article>
+                    <article class="feature-card col-4 card bg-white flex-col gap-15 item-padding-30">
+                        <div class="feature-card__item ratio-1x1 border-radius-10">
+                            <img src="./img/icon/shield-white.svg" alt="Security" class="icon-content">
+                        </div>
+                        <h4 class="text-md bold text-color-black">Bảo mật chuẩn Quốc Tế</h4>
+                        <p class="text-sm text-color-deactive line-height-1-5">Chứng chỉ SSL từ các nhà cung cấp uy tín
+                            như Sectigo, DigiCert giúp website an toàn tuyệt đối.</p>
+                    </article>
+                    <article class="feature-card col-4 card bg-white flex-col gap-15 item-padding-30">
+                        <div class="feature-card__item ratio-1x1 border-radius-10">
+                            <img src="./img/icon/update-white.svg" alt="Update" class="icon-content">
+                        </div>
+                        <h4 class="text-md bold text-color-black">Cập nhật miễn phí trọn đời</h4>
+                        <p class="text-sm text-color-deactive line-height-1-5">Mua một lần sử dụng mãi mãi với các bản
+                            cập nhật tính năng và bản vá lỗi định kỳ.</p>
+                    </article>
                 </div>
             </div>
         </section>
-        <section class="container-f container-padding bg-white">
-            <div class="container-l flex flex-wrap gap-20">
-
-                <div class="contact-section__container  item-padding-40 flex flex-col gap-30 border-radius-10">
-                    <div class="flex flex-col gap-10">
-                        <h2 class="uppercase bold">Có bất kỳ câu hỏi</h2>
-                        <div class="title-border-bottom"></div>
-                    </div>
-
-                    <div class="flex flex-col gap-20">
-                        <div class="custom-item__low item-padding-20 flex center-ver gap-20 border-radius-10">
-                            <div class="icon-box-50">
-                                <img src="./img/icon/phone-icon.svg" class="img-icon" alt="Phone">
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="text-color-deactive text-sm">Gọi ngay cho chúng tôi</span>
-                                <span class="bold">(+84) 94 2710025</span>
-                            </div>
-                        </div>
-
-                        <div class="custom-item__low item-padding-20 flex center-ver gap-20 border-radius-10">
-                            <div class="icon-box-50">
-                                <img src="./img/icon/mail-icon.svg" class="img-icon" alt="Email">
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="text-color-deactive text-sm">Email Cho Chúng Tôi 24/7</span>
-                                <span class="bold">info@mpx.com</span>
-                            </div>
-                        </div>
-
-                        <div class="custom-item__low item-padding-20 flex center-ver gap-20 border-radius-10">
-                            <div class="icon-box-50">
-                                <img src="./img/icon/map-icon.svg" class="img-icon" alt="Map">
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="text-color-deactive text-sm">Địa Chỉ Trung Tâm</span>
-                                <span class="bold">B8/255E, Ấp 2, Xã Phong Phú, Huyện Bình Chánh, TP.HCM, Việt
-                                    Nam</span>
-                            </div>
-                        </div>
+        <section class="products-section container-f bg-white container-padding hidden-section">
+            <div class="container-l flex-col gap-30">
+                <div class="section-header flex">
+                    <h2 class="section-title fill-view">Layout Nổi Bật</h2>
+                    <div class="archive-description fill-view flex flex-warp gap-20 jus-sb center-ver">
+                        <p class="text-color-deactive text-sm">Khám phá các bộ giao diện được tối ưu hóa cho chuyển đổi
+                            và trải nghiệm người dùng.</p>
+                        <a href="#" class=" bold flex center-ver gap-5 text-sm">Xem tất cả sản phẩm
+                            &rarr;</a>
                     </div>
                 </div>
-
-                <div
-                    class="contact-section__container contact-form__background item-padding-40 bg-white-secondary border-radius-10">
-                    <form class="flex flex-col gap-20 js-validate-form">
-                        <div class="flex flex-col gap-10">
-                            <span class="text-color-deactive italic text-sm">Liên hệ</span>
-                            <h2 class="uppercase bold">Liên hệ với chúng tôi</h2>
-                            <div class="title-border-bottom"></div>
+                <div class="products-list flex flex-wrap gap-20 w-100">
+                    <article
+                        class="products-list__item hover-border-primary col-5 pos-rel bg-white flex-col card overflow-hidden">
+                        <div class="card-img-wrap pos-rel overflow-hidden ratio-16x9">
+                            <span
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 pos-abs z-index-5">WordPress</span>
+                            <img src="./img/product/pressgrid.svg" alt="PressGrid" class="img-content">
                         </div>
-
-                        <div class="flex flex-wrap gap-20">
-                            <div class="flex-1 flex flex-col gap-10 form-group">
-                                <label class="bold">Họ và tên</label>
-                                <input type="text" placeholder="John Architect" required data-msg="Vui lòng nhập họ tên"
-                                    class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                <span class="error-msg text-red text-xs"></span>
+                        <div class="products-list__item-content flex flex-col gap-10 item-padding-20 flex-1">
+                            <h3 class="card-title text-md bold text-color-black">PressGrid Magazine</h3>
+                            <p class="text-xs text-color-deactive line-clamp-2">Theme tin tức và tạp chí với layout grid
+                                hiện đại.</p>
+                            <div class="flex jus-sb center-ver mt-auto pt-10">
+                                <span class="price text-sm bold text-color-black">950,000 VND</span>
+                                <span class="rating flex center-ver gap-5  bold">
+                                    <div class="rating__icon ratio-1x1 ">
+                                        <img src="./img/icon/star-primary.svg" class="img-content" alt="Star">
+                                    </div>
+                                    4.7
+                                </span>
                             </div>
-                            <div class="flex-1 flex flex-col gap-10 form-group">
-                                <label class="bold">Email</label>
-                                <input type="email" placeholder="name@architect.core" required
-                                    class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                <span class="error-msg text-red text-xs"></span>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-wrap gap-20">
-                            <div class="flex-1 flex flex-col gap-10 form-group">
-                                <label class="bold">Số điện thoại</label>
-                                <input type="text" placeholder="Số điện thoại" required pattern="^[0-9]{10,11}$"
-                                    data-msg="SĐT phải có 10-11 số"
-                                    class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                <span class="error-msg text-red text-xs"></span>
-                            </div>
-                            <div class="flex-1 flex flex-col gap-10 form-group">
-                                <label class="bold">Địa chỉ</label>
-                                <input type="text" placeholder="Địa chỉ" required
-                                    class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                <span class="error-msg text-red text-xs"></span>
+                            <div class="card-actions flex flex-wrap gap-10 mt-10 pos-rel z-10">
+                                <button class=" btn-primary flex-1">Xem
+                                    Demo</button>
+                                <button class="btn-primary active flex-1">Mua
+                                    Ngay</button>
                             </div>
                         </div>
-
-                        <div class="flex flex-col gap-10 form-group">
-                            <label class="bold">Nội dung</label>
-                            <textarea rows="4" required minlength="10" data-msg="Nội dung phải ít nhất 10 ký tự"
-                                class="item-padding-10-20 border-radius-5 bg-white border-none fill-view"></textarea>
-                            <span class="error-msg text-red text-xs"></span>
+                        <a href="#" class="pos-abs cover-all" aria-label="Xem PressGrid"></a>
+                    </article>
+                    <article
+                        class="products-list__item hover-border-primary col-5 pos-rel bg-white flex-col card overflow-hidden">
+                        <div class="card-img-wrap pos-rel overflow-hidden ratio-16x9">
+                            <span
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 pos-abs z-index-5">WordPress</span>
+                            <img src="./img/product/pressgrid.svg" alt="PressGrid" class="img-content">
                         </div>
-
-                        <div class="flex flex-col gap-10 form-group">
-                            <label class="bold">Mã bảo mật</label>
-                            <input type="text" required
-                                class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                            <span class="error-msg text-red text-xs"></span>
+                        <div class="products-list__item-content flex flex-col gap-10 item-padding-20 flex-1">
+                            <h3 class="card-title text-md bold text-color-black">PressGrid Magazine</h3>
+                            <p class="text-xs text-color-deactive line-clamp-2">Theme tin tức và tạp chí với layout grid
+                                hiện đại.</p>
+                            <div class="flex jus-sb center-ver mt-auto pt-10">
+                                <span class="price text-sm bold text-color-black">950,000 VND</span>
+                                <span class="rating flex center-ver gap-5  bold">
+                                    <div class="rating__icon ratio-1x1 ">
+                                        <img src="./img/icon/star-primary.svg" class="img-content" alt="Star">
+                                    </div>
+                                    4.7
+                                </span>
+                            </div>
+                            <div class="card-actions flex flex-wrap gap-10 mt-10 pos-rel z-10">
+                                <button class=" btn-primary flex-1">Xem
+                                    Demo</button>
+                                <button class="btn-primary active flex-1">Mua
+                                    Ngay</button>
+                            </div>
                         </div>
-
-                        <button type="submit"
-                            class="bg-primary text-color-white border-radius-5 bold uppercase cursor-pointer btn-submit-large border-none">
-                            Gửi tin nhắn &nbsp; →
-                        </button>
-                    </form>
+                        <a href="#" class="pos-abs cover-all" aria-label="Xem PressGrid"></a>
+                    </article>
+                    <article
+                        class="products-list__item hover-border-primary col-5 pos-rel bg-white flex-col card overflow-hidden">
+                        <div class="card-img-wrap pos-rel overflow-hidden ratio-16x9">
+                            <span
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 pos-abs z-index-5">WordPress</span>
+                            <img src="./img/product/pressgrid.svg" alt="PressGrid" class="img-content">
+                        </div>
+                        <div class="products-list__item-content flex flex-col gap-10 item-padding-20 flex-1">
+                            <h3 class="card-title text-md bold text-color-black">PressGrid Magazine</h3>
+                            <p class="text-xs text-color-deactive line-clamp-2">Theme tin tức và tạp chí với layout grid
+                                hiện đại.</p>
+                            <div class="flex jus-sb center-ver mt-auto pt-10">
+                                <span class="price text-sm bold text-color-black">950,000 VND</span>
+                                <span class="rating flex center-ver gap-5  bold">
+                                    <div class="rating__icon ratio-1x1 ">
+                                        <img src="./img/icon/star-primary.svg" class="img-content" alt="Star">
+                                    </div>
+                                    4.7
+                                </span>
+                            </div>
+                            <div class="card-actions flex flex-wrap gap-10 mt-10 pos-rel z-10">
+                                <button class=" btn-primary flex-1">Xem
+                                    Demo</button>
+                                <button class="btn-primary active flex-1">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                        <a href="#" class="pos-abs cover-all" aria-label="Xem PressGrid"></a>
+                    </article>
+                    <article
+                        class="products-list__item hover-border-primary col-5 pos-rel bg-white flex-col card overflow-hidden">
+                        <div class="card-img-wrap pos-rel overflow-hidden ratio-16x9">
+                            <span
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 pos-abs z-index-5">WordPress</span>
+                            <img src="./img/product/pressgrid.svg" alt="PressGrid" class="img-content">
+                        </div>
+                        <div class="products-list__item-content flex flex-col gap-10 item-padding-20 flex-1">
+                            <h3 class="card-title text-md bold text-color-black">PressGrid Magazine</h3>
+                            <p class="text-xs text-color-deactive line-clamp-2">Theme tin tức và tạp chí với layout grid
+                                hiện đại.</p>
+                            <div class="flex jus-sb center-ver mt-auto pt-10">
+                                <span class="price text-sm bold text-color-black">950,000 VND</span>
+                                <span class="rating flex center-ver gap-5  bold">
+                                    <div class="rating__icon ratio-1x1 ">
+                                        <img src="./img/icon/star-primary.svg" class="img-content" alt="Star">
+                                    </div>
+                                    4.7
+                                </span>
+                            </div>
+                            <div class="card-actions flex flex-wrap gap-10 mt-10 pos-rel z-10">
+                                <button class=" btn-primary flex-1">Xem
+                                    Demo</button>
+                                <button class="btn-primary active flex-1">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                        <a href="#" class="pos-abs cover-all" aria-label="Xem PressGrid"></a>
+                    </article>
+                    <article
+                        class="products-list__item hover-border-primary col-5 pos-rel bg-white flex-col card overflow-hidden">
+                        <div class="card-img-wrap pos-rel overflow-hidden ratio-16x9">
+                            <span
+                                class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 pos-abs z-index-5">WordPress</span>
+                            <img src="./img/product/pressgrid.svg" alt="PressGrid" class="img-content">
+                        </div>
+                        <div class="products-list__item-content flex flex-col gap-10 item-padding-20 flex-1">
+                            <h3 class="card-title text-md bold text-color-black">PressGrid Magazine</h3>
+                            <p class="text-xs text-color-deactive line-clamp-2">Theme tin tức và tạp chí với layout grid
+                                hiện đại.</p>
+                            <div class="flex jus-sb center-ver mt-auto pt-10">
+                                <span class="price text-sm bold text-color-black">950,000 VND</span>
+                                <span class="rating flex center-ver gap-5  bold">
+                                    <div class="rating__icon ratio-1x1 ">
+                                        <img src="./img/icon/star-primary.svg" class="img-content" alt="Star">
+                                    </div>
+                                    4.7
+                                </span>
+                            </div>
+                            <div class="card-actions flex flex-wrap gap-10 mt-10 pos-rel z-10">
+                                <button class=" btn-primary flex-1">Xem
+                                    Demo</button>
+                                <button class="btn-primary active flex-1">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                        <a href="#" class="pos-abs cover-all" aria-label="Xem PressGrid"></a>
+                    </article>
                 </div>
-
-            </div>
+                <div class="center-hor products-section__cta">
+                    <a href="#" class="btn-primary active">Xem tất cả sản
+                        phẩm</a>
+                </div>
         </section>
-        <section class="container-f container-padding news-background flex center-hor bg-white-secondary">
-            <div class="container-l flex flex-col gap-30">
-                <div class=" flex flex-col center-hor z-index-2 guest-comment__title">
-                    <p class="text-color-white">Bài viết và blog</p>
-                    <h2 class="section-title bold uppercase text-color-white">Bài viết gần đây</h2>
-                    <div class="title-border-bottom"></div>
-                </div>
-                <div class="news-slider-wrapper pos-rel js-slider-wrapper">
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <div class="news-swiper js-slider-4cols fill-view swiper">
-
-                        <div class="swiper-wrapper">
-
-                            <article class="swiper-slide col-4">
-                                <div class="news-item bg-white flex flex-col pos-rel border-radius-5 shadow-sm">
-                                    <div class="news-item__img">
-                                        <img src="./img/news/news.jpg" alt="Tin tức MPX" class="img-content">
-                                    </div>
-                                    <div class="news-item__content item-padding-20 flex flex-col gap-10">
-                                        <div class="flex gap-20">
-                                            <div class="news-item__date flex gap-10">
-                                                <img class="img-icon" src="./img/icon/clock.svg" alt="">
-                                                <p>17/4/2026</p>
-                                            </div>
-                                            <div class="news-item__view flex gap-10">
-                                                <img class="img-icon" src="./img/icon/eye.svg" alt="">
-                                                <p>500</p>
-                                            </div>
-                                        </div>
-                                        <h4 class="news-item__title clamp-text bold uppercase">Đổi Mới Vận Hành Sân Khấu
-                                            – Khi Công Nghệ Gặp Nghệ Thuật</h4>
-                                        <p class="news-item__desc clamp-text">
-                                            MPX ModuWall là hệ hộp đèn module kết nối...
-                                        </p>
-                                        <button
-                                            class="news-btn btn-padding flex gap-5 center-hor center-ver text-color-white border-radius-5 cursor-point bg-primary uppercase flex gap-10 center-ver un-wrap">
-                                            <p class="text-color-white">Xem chi tiết</p>
-                                            <p class="text-color-white">➔</p>
-                                        </button>
-                                    </div>
-                                    <a href="javascript:void(0)" class="pos-abs cover-all" aria-label="Xem tin tức"></a>
-                                </div>
-                            </article>
-
+        <section class="testimonials-section container-f bg-white-secondary container-padding hidden-section">
+            <div class="container-l flex-col center-hor gap-30">
+                <h2 class="section-title text-center">Khách hàng nói gì về chúng tôi</h2>
+                <div class="testimonials-grid flex flex-wrap gap-20 w-100">
+                    <!-- Thẻ 1 -->
+                    <article
+                        class="testi-card card col-3 bg-white flex-col pos-rel gap-15 item-padding-30 hover-border-primary border-radius-10 ">
+                        <div class="quote-bg pos-abs z-index-2 ratio-1x1 overflow-hidden">
+                            <img src="./img/icon/quote-green.svg" alt="Quote Icon" class="img-icon">
                         </div>
-                    </div>
+                        <div class="stars flex gap-5 pos-rel z-10">
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                        </div>
+                        <p class="text-color-deactive text-sm text-italic line-height-1-6 pos-rel z-10 flex-1">
+                            "Giao diện rất mượt, chuẩn SEO. Cài đặt SSL chỉ trong 5 phút! Tôi rất hài lòng với dịch vụ
+                            tại đây."
+                        </p>
+                        <div class="user-info flex gap-15 center-ver pos-rel z-10 border-top-light pt-15">
+                            <div
+                                class="user-info__avatar bg-primary ratio-1x1 text-color-white flex center-hor center-ver border-radius-10 ">
+                                NA
+                            </div>
+                            <div class="user-meta flex flex-col gap-5">
+                                <span class="text-sm bold text-color-black">Nguyễn Văn A</span>
+                                <span class="text-xs text-color-deactive">CEO, TechCorp</span>
+                            </div>
+                        </div>
+                    </article>
 
-                    <div class="swiper-pagination"></div>
+                    <!-- Thẻ 2 -->
+                    <article
+                        class="testi-card card col-3 bg-white flex-col pos-rel gap-15 item-padding-30 hover-border-primary border-radius-10 ">
+                        <div class="quote-bg pos-abs z-index-2 ratio-1x1 overflow-hidden">
+                            <img src="./img/icon/quote-green.svg" alt="Quote Icon" class="img-icon">
+                        </div>
+                        <div class="stars flex gap-5 pos-rel z-10">
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                        </div>
+                        <p class="text-color-deactive text-sm text-italic line-height-1-6 pos-rel z-10 flex-1">
+                            "Đội ngũ hỗ trợ nhiệt tình, giải quyết vấn đề kỹ thuật cực nhanh. Đây là đối tác tin cậy cho
+                            mọi dự án của chúng tôi."
+                        </p>
+                        <div class="user-info flex gap-15 center-ver pos-rel z-10 border-top-light pt-15">
+                            <div
+                                class="user-info__avatar bg-primary ratio-1x1 text-color-white flex center-hor center-ver border-radius-10">
+                                TB
+                            </div>
+                            <div class="user-meta flex flex-col gap-5">
+                                <span class="text-sm bold text-color-black">Trần Thị B</span>
+                                <span class="text-xs text-color-deactive">Manager, Creative Agency</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Thẻ 3 -->
+                    <article
+                        class="testi-card card col-3 bg-white flex-col pos-rel gap-15 item-padding-30 hover-border-primary border-radius-10 ">
+                        <div class="quote-bg pos-abs z-index-2 ratio-1x1 overflow-hidden">
+                            <img src="./img/icon/quote-green.svg" alt="Quote Icon" class="img-icon">
+                        </div>
+                        <div class="stars flex gap-5 pos-rel z-10">
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                            <div class="rating__icon ratio-1x1"><img src="./img/icon/star-green.svg" class="img-content"
+                                    alt="Star"></div>
+                        </div>
+                        <p class="text-color-deactive text-sm text-italic line-height-1-6 pos-rel z-10 flex-1">
+                            "Kho layout đa dạng, phù hợp với nhiều ngành nghề khác nhau. Code sạch và rất dễ tùy biến
+                            theo ý muốn."
+                        </p>
+                        <div class="user-info flex gap-15 center-ver pos-rel z-10 border-top-light pt-15">
+                            <div
+                                class="user-info__avatar bg-primary ratio-1x1 text-color-white flex center-hor center-ver border-radius-10">
+                                LC
+                            </div>
+                            <div class="user-meta flex flex-col gap-5">
+                                <span class="text-sm bold text-color-black">Lê Văn C</span>
+                                <span class="text-xs text-color-deactive">Developer, Freelance</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container-f bg-black center-ver flex flex-col item-padding-80-0 gap-30"
-        data-include="./component/footer.html"></footer>
+    <footer class="container-f bg-light-blue flex-col item-padding-80-0 gap-30"
+        data-include="./component/footer.html">
+    </footer>
     <div class="btntotop__container pos-fixed bg-white" data-include="./component/rolltotop.html" id="btnToTop">
     </div>
-    <div class="popup-register__container pos-fixed z-index-2 center-ver center-hor container-f"
-        data-include="./component/popup.html"></div>
     <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script defer type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer type="text/javascript" src="./js/frontend.js"></script>
 </body>

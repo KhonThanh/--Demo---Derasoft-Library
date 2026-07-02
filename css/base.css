@@ -1,18 +1,19 @@
 :root {
-  --primary-color: #F36523;
-  --white-color: #ffffff;
-  --second-white-color: #F8F8F8;
-  --black-color: #000000;
-  --gray-color: #D9D9D9;
-  --deactive-color: #64748B;
+  --white-color: #FFFFFF;
+  --primary-color: #4F46E5;       
+  --second-white-color: #FCF8FF;  
+  --bg-light-purple: #F5F2FF;    
+  --black-color: #1B1B24;        
+  --bg-light-blue: #EFF4FF;   
+  --color-brown: #7E3000;  
+  
+  --deactive-color: #C7C4D8;
   --error-color: #CB241C;
   --header-h: 64px;
   --footer-h: 80px;
   --gap: 20px;
-
   --font-size-base: 16px;
   --font-roboto: 'Roboto', Arial, sans-serif;
-  --font-dancing: 'Dancing Script', cursive;
 }
 
 main {
@@ -28,7 +29,7 @@ main {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 html {
@@ -58,6 +59,7 @@ body {
 header,
 footer,
 section {
+  display: flex; 
   justify-content: center;
 }
 
@@ -102,4 +104,57 @@ textarea{
 
 li{
   color: var(--black-color);
+}
+
+section.hidden-section {
+    opacity: 1;
+    transform: none;
+    filter: none;
+}
+
+section.hidden-section>div>div {
+    opacity: 0;
+    filter: blur(6px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform, filter;
+}
+
+section.hidden-section>div>div:nth-child(1) {
+    transform: translateY(-40px) scale(0.95);
+}
+
+section.hidden-section>div>div:nth-child(2) {
+    transform: translateY(60px);
+    transition-delay: 0.15s;
+}
+
+section.hidden-section>div>div:nth-child(n+3) {
+    transform: translateX(-50px);
+    transition-delay: 0.3s;
+}
+
+section.hidden-section.show-up>div>div {
+    opacity: 1;
+    transform: translate(0) scale(1);
+    filter: blur(0);
+}
+
+
+footer.hidden-section {
+    opacity: 0;
+    transform: translateY(100px) rotateX(-20deg);
+    transform-origin: top center;
+    filter: blur(20px);
+    transition: opacity 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity, filter;
+}
+
+footer.hidden-section.show-up {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+    filter: blur(0);
 }
