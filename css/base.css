@@ -43,7 +43,23 @@ button {
   background-color: transparent;
 }
 
-input:focus {
+input,
+textarea,
+select {
+  border: 1px solid var(--deactive-color);
+}
+
+select{
+  border:none;
+  width: 100%;
+}
+
+select:focus,
+select:focus-visible,
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
   outline: none;
 }
 

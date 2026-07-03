@@ -28,130 +28,143 @@
                 <a href="javascript:void(0)" class="nav-bar__item">Liên hệ</a>
             </div>
         </section>
-        <main class="container-f flex flex-col center-hor pos-rel ">
-            <section class="container-f container-padding bg-white">
-                <div class="container-l flex flex-wrap gap-20">
-
-                    <div class="contact-section__container  item-padding-40 flex flex-col gap-30 border-radius-10">
-                        <div class="flex flex-col gap-10">
-                            <h2 class="uppercase bold">Có bất kỳ câu hỏi</h2>
-                            <div class="title-border-bottom"></div>
-                        </div>
-
-                        <div class="flex flex-col gap-20">
-                            <div class="custom-item__low item-padding-20 flex center-ver gap-20 border-radius-10">
-                                <div class="icon-box-50">
-                                    <img src="./img/icon/phone-icon.svg" class="img-icon" alt="Phone">
-                                </div>
-                                <div class="flex flex-col">
-                                    <span class="text-color-deactive text-sm">Gọi ngay cho chúng tôi</span>
-                                    <span class="bold">(+84) 94 2710025</span>
-                                </div>
-                            </div>
-
-                            <div class="custom-item__low item-padding-20 flex center-ver gap-20 border-radius-10">
-                                <div class="icon-box-50">
-                                    <img src="./img/icon/mail-icon.svg" class="img-icon" alt="Email">
-                                </div>
-                                <div class="flex flex-col">
-                                    <span class="text-color-deactive text-sm">Email Cho Chúng Tôi 24/7</span>
-                                    <span class="bold">info@mpx.com</span>
-                                </div>
-                            </div>
-
-                            <div class="custom-item__low item-padding-20 flex center-ver gap-20 border-radius-10">
-                                <div class="icon-box-50">
-                                    <img src="./img/icon/map-icon.svg" class="img-icon" alt="Map">
-                                </div>
-                                <div class="flex flex-col">
-                                    <span class="text-color-deactive text-sm">Địa Chỉ Trung Tâm</span>
-                                    <span class="bold">B8/255E, Ấp 2, Xã Phong Phú, Huyện Bình Chánh, TP.HCM, Việt
-                                        Nam</span>
-                                </div>
-                            </div>
-                        </div>
+        <main class="container-f flex-col center-hor pos-rel ">
+            <section class="contact-section container-f container-padding bg-white hidden-section">
+                <div class="container-l flex-col gap-30">
+                    <div class="section-header text-center col-8 mx-auto flex flex-col gap-10">
+                        <h2 class="section-title">Liên hệ với chúng tôi</h2>
+                        <p class="text-color-deactive text-sm">Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ. Vui lòng
+                            điền thông tin vào form hoặc liên hệ trực tiếp qua các kênh dưới đây.</p>
                     </div>
 
-                    <div
-                        class="contact-section__container contact-form__background item-padding-40 bg-white-secondary border-radius-10">
-                        <form class="flex flex-col gap-20 js-validate-form">
-                            <div class="flex flex-col gap-10">
-                                <span class="text-color-deactive italic text-sm">Liên hệ</span>
-                                <h2 class="uppercase bold">Liên hệ với chúng tôi</h2>
-                                <div class="title-border-bottom"></div>
-                            </div>
+                    <div class="contact-grid flex flex-wrap gap-20">
+                        <form
+                            class="contact-form col-section-2 bg-white item-padding-40 border-radius-10  shadow-sm flex flex-col gap-20 js-validate-form"
+                            novalidate>
 
-                            <div class="flex flex-wrap gap-20">
-                                <div class="flex-1 flex flex-col gap-10 form-group">
-                                    <label class="bold">Họ và tên</label>
-                                    <input type="text" placeholder="John Architect" required
-                                        data-msg="Vui lòng nhập họ tên"
-                                        class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                    <span class="error-msg text-red text-xs"></span>
+                            <div class="flex gap-20">
+                                <div class="form-group flex-1 flex flex-col gap-10">
+                                    <label class="text-sm bold">Họ và tên *</label>
+                                    <input type="text" name="name" required data-msg="Vui lòng nhập họ tên"
+                                        placeholder="Nguyễn Văn A" class="item-padding-10 border-radius-5 ">
+                                    <span class="error-msg text-xs text-color-red"></span>
                                 </div>
-                                <div class="flex-1 flex flex-col gap-10 form-group">
-                                    <label class="bold">Email</label>
-                                    <input type="email" placeholder="name@architect.core" required
-                                        class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                    <span class="error-msg text-red text-xs"></span>
+                                <div class="form-group flex-1 flex flex-col gap-10">
+                                    <label class="text-sm bold">Email *</label>
+                                    <input type="email" name="email" required placeholder="email@example.com"
+                                        class="item-padding-10 border-radius-5 ">
+                                    <span class="error-msg text-xs text-color-red"></span>
                                 </div>
                             </div>
 
-                            <div class="flex flex-wrap gap-20">
-                                <div class="flex-1 flex flex-col gap-10 form-group">
-                                    <label class="bold">Số điện thoại</label>
-                                    <input type="text" placeholder="Số điện thoại" required pattern="^[0-9]{10,11}$"
-                                        data-msg="SĐT phải có 10-11 số"
-                                        class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                    <span class="error-msg text-red text-xs"></span>
+                            <div class="form-group flex flex-col gap-10">
+                                <label class="text-sm bold">Chủ đề</label>
+                                <div class="custom-select border-radius-5 item-padding-10">
+                                    <select name="subject" class=" border-radius-5 ">
+                                        <option value="">Chọn chủ đề</option>
+                                        <option value="1">Hỗ trợ kỹ thuật</option>
+                                        <option value="2">Hợp tác kinh doanh</option>
+                                        <option value="3">Phản hồi sản phẩm</option>
+                                        <option value="4">Khác</option>
+                                    </select>
                                 </div>
-                                <div class="flex-1 flex flex-col gap-10 form-group">
-                                    <label class="bold">Địa chỉ</label>
-                                    <input type="text" placeholder="Địa chỉ" required
-                                        class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                    <span class="error-msg text-red text-xs"></span>
-                                </div>
+                                <span class="error-msg text-xs text-color-red"></span>
                             </div>
-
-                            <div class="flex flex-col gap-10 form-group">
-                                <label class="bold">Nội dung</label>
-                                <textarea rows="4" required minlength="10" data-msg="Nội dung phải ít nhất 10 ký tự"
-                                    class="item-padding-10-20 border-radius-5 bg-white border-none fill-view"></textarea>
-                                <span class="error-msg text-red text-xs"></span>
-                            </div>
-
-                            <div class="flex flex-col gap-10 form-group">
-                                <label class="bold">Mã bảo mật</label>
-                                <input type="text" required
-                                    class="item-padding-10-20 border-radius-5 bg-white border-none fill-view">
-                                <span class="error-msg text-red text-xs"></span>
+                            <div class="form-group flex flex-col gap-10">
+                                <label class="text-sm bold">Lời nhắn *</label>
+                                <textarea name="message" required minlength="10" data-msg="Lời nhắn tối thiểu 10 ký tự"
+                                    rows="6" placeholder="Nhập nội dung bạn cần hỗ trợ..."
+                                    class="item-padding-10 border-radius-5 "></textarea>
+                                <span class="error-msg text-xs text-color-red"></span>
                             </div>
 
                             <button type="submit"
-                                class="bg-primary text-color-white border-radius-5 bold uppercase cursor-pointer btn-submit-large border-none">
-                                Gửi tin nhắn &nbsp; →
+                                class="btn-padding bg-primary text-color-white border-radius-5 bold cursor-pointer flex center-ver center-hor gap-10">
+                                Gửi yêu cầu <span>&#10148;</span>
                             </button>
                         </form>
-                    </div>
 
-                </div>
-            </section>
-            <section class="container-f container-padding-bottom ">
-                <div class="container-l company-map">
-                    <iframe class="fill-view border-none"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.123456789!2d106.6642711!3d10.692069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f97b400fd13%3A0x292925fdcdf0f6c0!2zQjgvMjU1RSwg4bqlcCAyLCBQaG9uZyBQaMO6LCBCw6luaCBDaMOhbmgsIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2svn!4v1714000000000!5m2!1svi!2svn"
-                        height="350" allowfullscreen="" loading="lazy">
-                    </iframe>
+                        <div class="contact-info col-section-2 flex flex-col gap-20">
+                            <div class="flex gap-20">
+                                <article
+                                    class="card hover-border-primary pos-rel bg-white-secondary item-padding-20 flex-col gap-10">
+                                    <div class="flex gap-10 center-ver">
+                                        <div class="icon-wrapper ratio-1x1">
+                                            <img src="./img/icon/location.svg" class="img-icon" alt="Building">
+                                        </div>
+                                        <h4 class="text-sm bold">Văn phòng Hà Nội</h4>
+                                    </div>
+                                    <p class="text-xs">Tầng 12, Tòa nhà Techcombank, 119 Trần Duy
+                                        Hưng, Cầu Giấy, Hà Nội</p>
+                                    <a href="javascript:void(0);" class="link-overlay"></a>
+                                </article>
+                                <article
+                                    class="card hover-border-primary pos-rel bg-white-secondary item-padding-20 flex-col gap-10">
+                                    <div class="flex gap-10 center-ver">
+                                        <div class="icon-wrapper ratio-1x1">
+                                            <img src="./img/icon/building.svg" class="img-icon" alt="Building">
+                                        </div>
+                                        <h4 class="text-sm bold">Văn phòng TP.HCM</h4>
+                                    </div>
+                                    <p class="text-xs">Tầng 8, Tòa nhà Bitexco, số 2 Hải
+                                        Triều, Bến Nghé, Quận 1, TP.HCM</p>
+                                    <a href="javascript:void(0);" class="link-overlay"></a>
+                                </article>
+                            </div>
+                            <div class="contact-info__content bg-white-secondary item-padding-20 card flex-col">
+                                <div class="contact-info__item flex center-ver gap-15">
+                                    <div class=" icon-contact ratio-1x1">
+                                        <img src="./img/icon/phone-primary.svg" class="img-icon" alt="Phone">
+                                    </div>
+                                    <div class="flex flex-col gap-5">
+                                        <p class="text-xs text-color-deactive">Hotline hỗ trợ (24/7)</p>
+                                        <h4 class="text-xs">1900 1234</h4>
+                                    </div>
+                                </div>
+                                <div class="contact-info__item flex center-ver gap-15">
+                                    <div class=" icon-contact ratio-1x1">
+                                        <img src="./img/icon/envelope-primary.svg" class="img-icon" alt="Email">
+                                    </div>
+                                    <div class="flex flex-col gap-5">
+                                        <p class="text-xs text-color-deactive">Email hỗ trợ kỹ thuật</p>
+                                        <h4 class="text-xs">support@trustmarket.vn</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="map-container overflow-hidden border-radius-10 ratio-16x9">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5449.923287376652!2d106.61718667629793!3d10.807783189342887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be5afb71b8d%3A0x4441dcd48ef13904!2zMzQxIEzDqiBUcuG7jW5nIFThuqVuLCBUw6JuIFPGoW4gTmjDrCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1783050717411!5m2!1svi!2s"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            </div>
+                            <div class="flex center-ver gap-15 pt-10">
+                                <span class="text-sm bold">Kết nối với chúng tôi:</span>
+                                <div class="flex gap-10">
+                                    <div class="icon-contact icon-wrapper pos-rel ratio-1x1">
+                                        <a href="javascrpit:void(0)" class="link-overlay"></a>
+                                        <img src="./img/icon/facebook-primary.svg" class="img-icon" alt="Facebook">
+                                    </div>
+                                    <div class="icon-contact icon-wrapper pos-rel ratio-1x1">
+                                        <a href="javascrpit:void(0)" class="link-overlay"></a>
+                                        <img src="./img/icon/twitter-primary.svg" class="img-icon" alt="Twitter">
+                                    </div>
+                                    <div class="icon-contact icon-wrapper pos-rel ratio-1x1">
+                                        <a href="javascrpit:void(0)" class="link-overlay"></a>
+                                        <img src="./img/icon/instagram-primary.svg" class="img-icon" alt="Instagram">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer class="container-f bg-black item-padding-80-0  center-ver" data-include="./component/footer.html">
+        <footer class="container-f bg-light-blue flex-col item-padding-80-0 gap-30"
+            data-include="./component/footer.html">
         </footer>
         <div class="btntotop__container pos-fixed bg-white" data-include="./component/rolltotop.html" id="btnToTop">
         </div>
-        <div class="popup-register__container pos-fixed z-index-2 center-ver center-hor container-f"
-            data-include="./component/popup.html"></div>
-
         <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script defer type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

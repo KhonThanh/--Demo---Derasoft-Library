@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPX VN | Tin tức</title>
+    <title>Thư viện | Tin tức</title>
     <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="./img/banner/banner-home.webp">
@@ -21,245 +21,118 @@
 </head>
 
 <body>
-    <header class="container-f bg-black" data-include="./component/header.html"></header>
+    <header class="container-f bg-black " data-include="./component/header.html"></header>
     <main class="container-f flex flex-col center-hor pos-rel">
-        <section class="flex bg-gray container-f">
+        <section class="bg-gray container-f">
             <div class="container-l nav-bar__container">
                 <a href="./index.html" class="nav-bar__item">Trang chủ</a>
-                <a href="javascript:void(0)" class="nav-bar__item">Tin tức</a>
+                <a href="javascript:void(0)" class="nav-bar__item">tin tức</a>
             </div>
         </section>
-        <section class="archive-section container-f container-padding bg-white-secondary">
-            <div class="container-l flex flex-wrap gap-20">
-                <div class="archive-main  flex flex-col gap-20">
-                    <div class="archive-header flex flex-col gap-10">
-                        <h1 class="section-title bold uppercase">Các tin tức mới trong ngày</h1>
-                        <div class="title-border-bottom"></div>
-                    </div>
-                    <div class="archive-container flex flex-wrap gap-20">
-                        <article class="col-3">
-                            <div class="news-item bg-white flex flex-col pos-rel border-radius-5 shadow-sm">
-                                <div class="news-item__img">
-                                    <img src="./img/news/news.jpg" alt="Tin tức MPX" class="img-content">
-                                </div>
-                                <div class="news-item__content item-padding-20 flex flex-col gap-10">
-                                    <div class="flex gap-20">
-                                        <div class="news-item__date flex gap-10">
-                                            <img class="img-icon" src="./img/icon/clock.svg" alt="">
-                                            <p>17/4/2026</p>
-                                        </div>
-                                        <div class="news-item__view flex gap-10">
-                                            <img class="img-icon" src="./img/icon/eye.svg" alt="">
-                                            <p>500</p>
-                                        </div>
-                                    </div>
-                                    <h4 class="news-item__title clamp-text bold uppercase">Đổi Mới Vận Hành Sân Khấu
-                                        – Khi Công Nghệ Gặp Nghệ Thuật</h4>
-                                    <p class="news-item__desc clamp-text">
-                                        MPX ModuWall là hệ hộp đèn module kết nối – cho phép tạo thành vách tường
-                                        lớn booth triển lãm khu trưng bày ánh sáng bằng cách lắp ráp nhiều khung hộp
-                                        đèn lại với nhau. Tối ưu cho không gian branding quy mô lớn, dễ tháo lắp –
-                                        phù hợp với doanh nghiệp cần setup nhanh và thay đổi linh hoạt theo từng sự
-                                        kiện..
-                                    </p>
-                                    <button
-                                        class="news-btn btn-padding flex gap-5 center-hor center-ver text-color-white border-radius-5 cursor-point bg-primary uppercase flex gap-10 center-ver un-wrap">
-                                        <p class="text-color-white">Xem chi tiết</p>
-                                        <p class="text-color-white">➔</p>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="pos-abs cover-all" aria-label="Xem tin tức"></a>
+        <section class="blog-section container-f container-padding bg-white-secondary">
+            <div class="container-l flex-wrap gap-20">
+                <div class="blog-main flex flex-col gap-10">
+                    <h2 class="section-title ">Tin tức & Blog</h2>
+                    <p class="text-color-deactive text-sm">Cập nhật những thông tin mới nhất về SaaS, công nghệ và thị
+                        trường.</p>
+                    <div class="blog-grid flex flex-wrap gap-20 ">
+                        <article class="blog-container hover-border-primary col-3 flex-col card overflow-hidden">
+                            <div class="blog-img ratio-16x9">
+                                <img src="./img/blog/cloud-2024.svg" alt="Blog" class="img-content">
                             </div>
-                        </article>
-                        <article class="col-3">
-                            <div class="news-item bg-white flex flex-col pos-rel border-radius-5 shadow-sm">
-                                <div class="news-item__img">
-                                    <img src="./img/news/news.jpg" alt="Tin tức MPX" class="img-content">
-                                </div>
-                                <div class="news-item__content item-padding-20 flex flex-col gap-10">
-                                    <div class="flex gap-20">
-                                        <div class="news-item__date flex gap-10">
-                                            <img class="img-icon" src="./img/icon/clock.svg" alt="">
-                                            <p>17/4/2026</p>
-                                        </div>
-                                        <div class="news-item__view flex gap-10">
-                                            <img class="img-icon" src="./img/icon/eye.svg" alt="">
-                                            <p>500</p>
-                                        </div>
-                                    </div>
-                                    <h4 class="news-item__title clamp-text bold uppercase">Đổi Mới Vận Hành Sân Khấu
-                                        – Khi Công Nghệ Gặp Nghệ Thuật</h4>
-                                    <p class="news-item__desc clamp-text">
-                                        MPX ModuWall là hệ hộp đèn module kết nối – cho phép tạo thành vách tường
-                                        lớn booth triển lãm khu trưng bày ánh sáng bằng cách lắp ráp nhiều khung hộp
-                                        đèn lại với nhau. Tối ưu cho không gian branding quy mô lớn, dễ tháo lắp –
-                                        phù hợp với doanh nghiệp cần setup nhanh và thay đổi linh hoạt theo từng sự
-                                        kiện..
-                                    </p>
-                                    <button
-                                        class="news-btn btn-padding flex gap-5 center-hor center-ver text-color-white border-radius-5 cursor-point bg-primary uppercase flex gap-10 center-ver un-wrap">
-                                        <p class="text-color-white">Xem chi tiết</p>
-                                        <p class="text-color-white">➔</p>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="pos-abs cover-all" aria-label="Xem tin tức"></a>
+                            <div class="blog-content item-padding-20 flex flex-col gap-10">
+                                <span class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 z-index-5 pos-abs">Technology</span>
+                                <h3 class="text-md bold clamp-line-two clamp-text">Tương lai của Cloud Computing trong năm 2024</h3>
+                                <p class="text-sm  clamp-line-three clamp-text">Khám phá những xu hướng mới nhất về
+                                    điện
+                                    toán đám mây và cách chúng định hình lại
+                                    cách các doanh nghiệp vận hành trong kỷ…</p>
+                                <div class="text-xs text-color-deactive mt-10 flex center-ver gap-5">📅 12/10/2023</div>
                             </div>
+                            <a href="./detail-news.html" class="link-overlay" aria-label="Xem chi tiết"></a>
                         </article>
-                        <article class="col-3">
-                            <div class="news-item bg-white flex flex-col pos-rel border-radius-5 shadow-sm">
-                                <div class="news-item__img">
-                                    <img src="./img/news/news.jpg" alt="Tin tức MPX" class="img-content">
-                                </div>
-                                <div class="news-item__content item-padding-20 flex flex-col gap-10">
-                                    <div class="flex gap-20">
-                                        <div class="news-item__date flex gap-10">
-                                            <img class="img-icon" src="./img/icon/clock.svg" alt="">
-                                            <p>17/4/2026</p>
-                                        </div>
-                                        <div class="news-item__view flex gap-10">
-                                            <img class="img-icon" src="./img/icon/eye.svg" alt="">
-                                            <p>500</p>
-                                        </div>
-                                    </div>
-                                    <h4 class="news-item__title clamp-text bold uppercase">Đổi Mới Vận Hành Sân Khấu
-                                        – Khi Công Nghệ Gặp Nghệ Thuật</h4>
-                                    <p class="news-item__desc clamp-text">
-                                        MPX ModuWall là hệ hộp đèn module kết nối – cho phép tạo thành vách tường
-                                        lớn booth triển lãm khu trưng bày ánh sáng bằng cách lắp ráp nhiều khung hộp
-                                        đèn lại với nhau. Tối ưu cho không gian branding quy mô lớn, dễ tháo lắp –
-                                        phù hợp với doanh nghiệp cần setup nhanh và thay đổi linh hoạt theo từng sự
-                                        kiện..
-                                    </p>
-                                    <button
-                                        class="news-btn btn-padding flex gap-5 center-hor center-ver text-color-white border-radius-5 cursor-point bg-primary uppercase flex gap-10 center-ver un-wrap">
-                                        <p class="text-color-white">Xem chi tiết</p>
-                                        <p class="text-color-white">➔</p>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="pos-abs cover-all" aria-label="Xem tin tức"></a>
+                         <article class="blog-container hover-border-primary col-3 flex-col card overflow-hidden">
+                            <div class="blog-img ratio-16x9">
+                                <img src="./img/blog/cloud-2024.svg" alt="Blog" class="img-content">
                             </div>
-                        </article>
-                        <article class="col-3">
-                            <div class="news-item bg-white flex flex-col pos-rel border-radius-5 shadow-sm">
-                                <div class="news-item__img">
-                                    <img src="./img/news/news.jpg" alt="Tin tức MPX" class="img-content">
-                                </div>
-                                <div class="news-item__content item-padding-20 flex flex-col gap-10">
-                                    <div class="flex gap-20">
-                                        <div class="news-item__date flex gap-10">
-                                            <img class="img-icon" src="./img/icon/clock.svg" alt="">
-                                            <p>17/4/2026</p>
-                                        </div>
-                                        <div class="news-item__view flex gap-10">
-                                            <img class="img-icon" src="./img/icon/eye.svg" alt="">
-                                            <p>500</p>
-                                        </div>
-                                    </div>
-                                    <h4 class="news-item__title clamp-text bold uppercase">Đổi Mới Vận Hành Sân Khấu
-                                        – Khi Công Nghệ Gặp Nghệ Thuật</h4>
-                                    <p class="news-item__desc clamp-text">
-                                        MPX ModuWall là hệ hộp đèn module kết nối – cho phép tạo thành vách tường
-                                        lớn booth triển lãm khu trưng bày ánh sáng bằng cách lắp ráp nhiều khung hộp
-                                        đèn lại với nhau. Tối ưu cho không gian branding quy mô lớn, dễ tháo lắp –
-                                        phù hợp với doanh nghiệp cần setup nhanh và thay đổi linh hoạt theo từng sự
-                                        kiện..
-                                    </p>
-                                    <button
-                                        class="news-btn btn-padding flex gap-5 center-hor center-ver text-color-white border-radius-5 cursor-point bg-primary uppercase flex gap-10 center-ver un-wrap">
-                                        <p class="text-color-white">Xem chi tiết</p>
-                                        <p class="text-color-white">➔</p>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="pos-abs cover-all" aria-label="Xem tin tức"></a>
+                            <div class="blog-content item-padding-20 flex flex-col gap-10">
+                                <span class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 z-index-5 pos-abs">Technology</span>
+                                <h3 class="text-md bold clamp-line-two clamp-text">Tương lai của Cloud Computing trong năm 2024</h3>
+                                <p class="text-sm  clamp-line-three clamp-text">Khám phá những xu hướng mới nhất về
+                                    điện
+                                    toán đám mây và cách chúng định hình lại
+                                    cách các doanh nghiệp vận hành trong kỷ…</p>
+                                <div class="text-xs text-color-deactive mt-10 flex center-ver gap-5">📅 12/10/2023</div>
                             </div>
-                        </article>
-                        <article class="col-3">
-                            <div class="news-item bg-white flex flex-col pos-rel border-radius-5 shadow-sm">
-                                <div class="news-item__img">
-                                    <img src="./img/news/news.jpg" alt="Tin tức MPX" class="img-content">
-                                </div>
-                                <div class="news-item__content item-padding-20 flex flex-col gap-10">
-                                    <div class="flex gap-20">
-                                        <div class="news-item__date flex gap-10">
-                                            <img class="img-icon" src="./img/icon/clock.svg" alt="">
-                                            <p>17/4/2026</p>
-                                        </div>
-                                        <div class="news-item__view flex gap-10">
-                                            <img class="img-icon" src="./img/icon/eye.svg" alt="">
-                                            <p>500</p>
-                                        </div>
-                                    </div>
-                                    <h4 class="news-item__title clamp-text bold uppercase">Đổi Mới Vận Hành Sân Khấu
-                                        – Khi Công Nghệ Gặp Nghệ Thuật</h4>
-                                    <p class="news-item__desc clamp-text">
-                                        MPX ModuWall là hệ hộp đèn module kết nối – cho phép tạo thành vách tường
-                                        lớn booth triển lãm khu trưng bày ánh sáng bằng cách lắp ráp nhiều khung hộp
-                                        đèn lại với nhau. Tối ưu cho không gian branding quy mô lớn, dễ tháo lắp –
-                                        phù hợp với doanh nghiệp cần setup nhanh và thay đổi linh hoạt theo từng sự
-                                        kiện..
-                                    </p>
-                                    <button
-                                        class="news-btn btn-padding flex gap-5 center-hor center-ver text-color-white border-radius-5 cursor-point bg-primary uppercase flex gap-10 center-ver un-wrap">
-                                        <p class="text-color-white">Xem chi tiết</p>
-                                        <p class="text-color-white">➔</p>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="pos-abs cover-all" aria-label="Xem tin tức"></a>
+                            <a href="./detail-news.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </article> 
+                        <article class="blog-container hover-border-primary col-3 flex-col card overflow-hidden">
+                            <div class="blog-img ratio-16x9">
+                                <img src="./img/blog/cloud-2024.svg" alt="Blog" class="img-content">
                             </div>
-                        </article>
-                        <article class="col-3">
-                            <div class="news-item bg-white flex flex-col pos-rel border-radius-5 shadow-sm">
-                                <div class="news-item__img">
-                                    <img src="./img/news/news.jpg" alt="Tin tức MPX" class="img-content">
-                                </div>
-                                <div class="news-item__content item-padding-20 flex flex-col gap-10">
-                                    <div class="flex gap-20">
-                                        <div class="news-item__date flex gap-10">
-                                            <img class="img-icon" src="./img/icon/clock.svg" alt="">
-                                            <p>17/4/2026</p>
-                                        </div>
-                                        <div class="news-item__view flex gap-10">
-                                            <img class="img-icon" src="./img/icon/eye.svg" alt="">
-                                            <p>500</p>
-                                        </div>
-                                    </div>
-                                    <h4 class="news-item__title clamp-text bold uppercase">Đổi Mới Vận Hành Sân Khấu
-                                        – Khi Công Nghệ Gặp Nghệ Thuật</h4>
-                                    <p class="news-item__desc clamp-text">
-                                        MPX ModuWall là hệ hộp đèn module kết nối – cho phép tạo thành vách tường
-                                        lớn booth triển lãm khu trưng bày ánh sáng bằng cách lắp ráp nhiều khung hộp
-                                        đèn lại với nhau. Tối ưu cho không gian branding quy mô lớn, dễ tháo lắp –
-                                        phù hợp với doanh nghiệp cần setup nhanh và thay đổi linh hoạt theo từng sự
-                                        kiện..
-                                    </p>
-                                    <button
-                                        class="news-btn btn-padding flex gap-5 center-hor center-ver text-color-white border-radius-5 cursor-point bg-primary uppercase flex gap-10 center-ver un-wrap">
-                                        <p class="text-color-white">Xem chi tiết</p>
-                                        <p class="text-color-white">➔</p>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="pos-abs cover-all" aria-label="Xem tin tức"></a>
+                            <div class="blog-content item-padding-20 flex flex-col gap-10">
+                                <span class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 z-index-5 pos-abs">Technology</span>
+                                <h3 class="text-md bold clamp-line-two clamp-text">Tương lai của Cloud Computing trong năm 2024</h3>
+                                <p class="text-sm  clamp-line-three clamp-text">Khám phá những xu hướng mới nhất về
+                                    điện
+                                    toán đám mây và cách chúng định hình lại
+                                    cách các doanh nghiệp vận hành trong kỷ…</p>
+                                <div class="text-xs text-color-deactive mt-10 flex center-ver gap-5">📅 12/10/2023</div>
                             </div>
+                            <a href="./detail-news.html" class="link-overlay" aria-label="Xem chi tiết"></a>
                         </article>
-                    </div>
-
-                    <div class="archive-pagination flex center-hor gap-10 item-padding-20">
-                        <button class="pagination-btn border-radius-5 prev">&lt;</button>
-                        <button class="pagination-btn border-radius-5 active">1</button>
-                        <button class="pagination-btn border-radius-5">2</button>
-                        <button class="pagination-btn border-radius-5 next">&gt;</button>
+                         <article class="blog-container hover-border-primary col-3 flex-col card overflow-hidden">
+                            <div class="blog-img ratio-16x9">
+                                <img src="./img/blog/cloud-2024.svg" alt="Blog" class="img-content">
+                            </div>
+                            <div class="blog-content item-padding-20 flex flex-col gap-10">
+                                <span class="card-tag un-wrap text-color-white bg-primary border-radius-5 bold item-padding-5-10 border-radius-5 z-index-5 pos-abs">Technology</span>
+                                <h3 class="text-md bold clamp-line-two clamp-text">Tương lai của Cloud Computing trong năm 2024</h3>
+                                <p class="text-sm  clamp-line-three clamp-text">Khám phá những xu hướng mới nhất về
+                                    điện
+                                    toán đám mây và cách chúng định hình lại
+                                    cách các doanh nghiệp vận hành trong kỷ…</p>
+                                <div class="text-xs text-color-deactive mt-10 flex center-ver gap-5">📅 12/10/2023</div>
+                            </div>
+                            <a href="./detail-news.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </article>
                     </div>
                 </div>
 
-                <aside data-include="./component/sidebar.html" class="archive-sidebar bg-white item-padding-20 border-radius-5 flex flex-col gap-20"></aside>
+                <aside class="blog-sidebar flex flex-col gap-30">
+                    <div class="bg-white border-radius-10 item-padding-20 border-light ">
+                        <h4 class="text-md bold mb-20">Bài viết xem nhiều nhất</h4>
+                        <div class="flex flex-col gap-20">
+                            <div class="flex gap-15">
+                                <span class="text-lg bold opacity-30">01</span>
+                                <div>
+                                    <p class="text-sm bold">5 Công cụ quản lý dự án tốt nhất hiện nay</p>
+                                    <p class="text-xs text-color-deactive">15K lượt xem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-primary border-radius-10 item-padding-30 text-center text-color-white flex flex-col gap-15">
+                        <div class="icon-wrapper ratio-1x1">
+                            <img src="./img/icon/envelope-white.svg" class="img-content" alt="Envelope">
+                        </div>
+                        <h4 class="bold">Đăng ký Newsletter</h4>
+                        <p class="text-sm">Nhận những bài viết mới nhất và ưu đãi độc quyền.</p>
+                        <input type="email" placeholder="Địa chỉ email của bạn"
+                            class="item-padding-10 border-radius-5 border-none">
+                        <button class="btn-padding bg-white text-color-primary border-radius-5 bold">Đăng ký
+                            ngay</button>
+                    </div>
+                </aside>
             </div>
         </section>
     </main>
-    <footer class="container-f bg-black center-ver flex flex-col item-padding-80-0 gap-30"
+    <footer class="container-f bg-light-blue center-ver flex flex-col item-padding-80-0 gap-30"
         data-include="./component/footer.html"></footer>
     <div class="btntotop__container pos-fixed bg-white" data-include="./component/rolltotop.html" id="btnToTop">
     </div>
-        <div class="popup-register__container pos-fixed z-index-2 center-ver center-hor container-f" data-include="./component/popup.html"></div>
+
     <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script defer type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

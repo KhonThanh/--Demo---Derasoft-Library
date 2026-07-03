@@ -23,82 +23,129 @@
 <body>
     <header class="container-f bg-black " data-include="./component/header.html"></header>
     <main class="container-f flex flex-col center-hor pos-rel">
-        <section class="story-section container-f container-padding bg-white-secondary hidden-section">
+        <section class="bg-gray container-f">
+            <div class="container-l nav-bar__container">
+                <a href="./index.html" class="nav-bar__item">Trang chủ</a>
+                <a href="javascript:void(0)" class="nav-bar__item">Giới thiệu</a>
+            </div>
+        </section>
+        <section class="intro-section container-f container-padding bg-white ">
+            <div class="container-l flex flex-col center-hor gap-30">
+                <h1 class="section-title text-center">Kiến tạo chuẩn mực mới cho thị trường
+                    SaaS</h1>
+                <p class="text-sm text-color-deactive text-center">TrustMarket ra đời với một mục tiêu duy nhất: Xây
+                    dựng một hệ sinh thái phần
+                    mềm an toàn, minh bạch và hiệu quả nhất cho doanh nghiệp hiện đại.</p>
+            </div>
+        </section>
+        <section class="story-section container-f container-padding bg-white-secondary ">
             <div class="container-l flex flex-col gap-40">
                 <div class="flex flex-wrap gap-40 center-ver">
                     <div class="col-section-2 flex flex-col gap-15">
                         <h2 class="section-title">Câu chuyện của chúng tôi</h2>
-                        <p class="text-sm text-color-deactive">Mọi thứ bắt đầu từ một nỗi đau chung của thị trường: Sự
-                            thiếu hụt niềm tin...</p>
-                        <p class="text-sm text-color-deactive">TrustMarket được xây dựng để trở thành "cây cầu" vững
-                            chắc...</p>
+                        <p class="text-sm ">Mọi thứ bắt đầu từ một nỗi đau chung của thị trường: Sự
+                            thiếu hụt niềm tin.
+                            Các doanh nghiệp mất quá nhiều thời gian để thẩm định chất lượng phần
+                            mềm, trong khi các nhà cung cấp uy tín lại chật vật trong việc chứng minh
+                            năng lực.</p>
+                        <p class="text-sm ">TrustMarket được xây dựng để trở thành "cây cầu" vững
+                            chắc kết nối hai
+                            bên. Bằng việc áp dụng các tiêu chuẩn kiểm duyệt khắt khe và hệ thống
+                            đánh giá minh bạch, chúng tôi không chỉ là một marketplace, mà là một đối
+                            tác đáng tin cậy trên hành trình chuyển đổi số.</p>
                     </div>
-                    <div class="col-section-2 ratio-16x9">
-                        <img src="./img/story-image.jpg" alt="Câu chuyện" class="img-cover border-radius-10">
+                    <div class="hero-image pos-rel col-section-2">
+                        <div class="hero-image__img ratio-16x9 ">
+                            <img src="./img/hero/story-image.svg" alt="Hero Image" class="img-cover">
+                        </div>
                     </div>
                 </div>
 
         </section>
-        <section class="stats-section container-f container-padding bg-light-purple hidden-section">
+        <section class="stats-section container-f container-padding bg-light-purple ">
             <div class="container-l flex flex-wrap gap-20">
-                <div class="col-4 bg-white border-radius-10 item-padding-20 shadow-sm text-center">
-                    <h3 class="text-lg bold text-color-primary">5000+</h3>
+                <div class="stats-section__item col-4 bg-white border-radius-10 item-padding-20 shadow-sm text-center">
+                    <h3 class="stats-section__title bold text-color-primary">5000+</h3>
                     <p class="text-xs uppercase">Doanh nghiệp</p>
                 </div>
-                <div class="col-4 bg-white border-radius-10 item-padding-20 shadow-sm text-center">
-                    <h3 class="text-lg bold text-color-primary">10k+</h3>
+                <div class="stats-section__item col-4 bg-white border-radius-10 item-padding-20 shadow-sm text-center">
+                    <h3 class="stats-section__title bold text-color-primary">10k+</h3>
                     <p class="text-xs uppercase">Dự án thành công</p>
                 </div>
-                <div class="col-4 bg-white border-radius-10 item-padding-20 shadow-sm text-center">
-                    <h3 class="text-lg bold text-color-primary">99%</h3>
+                <div class="stats-section__item col-4 bg-white border-radius-10 item-padding-20 shadow-sm text-center">
+                    <h3 class="stats-section__title bold text-color-primary">99%</h3>
                     <p class="text-xs uppercase">Tỷ lệ hài lòng</p>
                 </div>
-                <div class="col-4 bg-white border-radius-10 item-padding-20 shadow-sm text-center">
-                    <h3 class="text-lg bold text-color-primary">24/7</h3>
+                <div class="stats-section__item col-4 bg-white border-radius-10 item-padding-20 shadow-sm text-center">
+                    <h3 class="stats-section__title bold text-color-primary">24/7</h3>
                     <p class="text-xs uppercase">Hỗ trợ kỹ thuật</p>
                 </div>
             </div>
             </div>
         </section>
-        <section class="mission-section container-f container-padding bg-white-secondary hidden-section">
+        <section class="mission-section container-f container-padding bg-white ">
             <div class="container-l flex flex-wrap gap-20">
-                <article class="col-6 bg-white item-padding-30 border-radius-10 border-light shadow-sm flex gap-15">
-                    <div class="icon-box-40 bg-primary-light flex center-hor center-ver border-radius-5"><img
-                            src="./img/icon/rocket.svg" class="icon-sm"></div>
-                    <div class="flex flex-col gap-10">
-                        <h3 class="text-md bold">Sứ mệnh</h3>
-                        <p class="text-sm text-color-deactive">Đơn giản hóa quá trình tìm kiếm, triển khai và quản lý
-                            phần mềm SaaS...</p>
-                    </div>
+                <article class="col-2 card flex-col bg-white-second item-padding-30 border-radius-10 gap-10">
+                    <div class="mission-section__icon"><img src="./img/icon/rocket.svg" class="img-content"></div>
+                    <h3 class="text-md bold">Sứ mệnh</h3>
+                    <p class="text-sm ">Đơn giản hóa quá trình tìm kiếm, triển khai và quản lý phần
+                        mềm
+                        SaaS cho mọi quy mô doanh nghiệp. Chúng tôi cam kết mang lại một
+                        môi trường giao dịch minh bạch, an toàn và tối ưu chi phí.</p>
                 </article>
-                <article class="col-6 bg-white item-padding-30 border-radius-10 border-light shadow-sm flex gap-15">
-                    <div class="icon-box-40 bg-primary-light flex center-hor center-ver border-radius-5"><img
-                            src="./img/icon/eye.svg" class="icon-sm"></div>
-                    <div class="flex flex-col gap-10">
-                        <h3 class="text-md bold">Tầm nhìn</h3>
-                        <p class="text-sm text-color-deactive">Trở thành nền tảng SaaS Marketplace số 1 Đông Nam Á vào
-                            năm 2026...</p>
-                    </div>
+                <article class="col-2 card flex-col bg-white-second item-padding-30 border-radius-10 gap-10">
+                    <div class="mission-section__icon"><img src="./img/icon/eye.svg" class="img-content"></div>
+                    <h3 class="text-md bold">Tầm nhìn</h3>
+                    <p class="text-sm ">Trở thành nền tảng SaaS Marketplace số 1 Đông Nam Á vào năm
+                        2026, nơi mọi nhà phát triển phần mềm chất lượng có thể tiếp cận thị
+                        trường toàn cầu một cách dễ dàng và công bằng.</p>
                 </article>
             </div>
         </section>
-        <section class="team-section container-f container-padding bg-white hidden-section">
+        <section class="team-section container-f container-padding bg-white-secondary">
             <div class="container-l flex-col center-hor gap-30">
-                <div class="text-center">
-                    <h2 class="section-title">Đội ngũ lãnh đạo</h2>
-                    <p class="text-sm text-color-deactive">Những chuyên gia tâm huyết đứng sau sự thành công của
+                <div class="flex flex-col center-hor gap-10">
+                    <h2 class="section-title text-center">Đội ngũ lãnh đạo</h2>
+                    <p class="text-sm text-color-deactive text-center">Những chuyên gia tâm huyết đứng sau sự thành công của
                         TrustMarket.</p>
                 </div>
                 <div class="team-grid flex flex-wrap gap-20">
-                    <!-- Nhân bản card này cho 4 nhân sự -->
-                    <article class="col-3 card bg-white border-radius-10 shadow-sm overflow-hidden text-center">
-                        <img src="./img/team/tran-van-a.jpg" alt="Trần Văn A" class="ratio-1x1 img-cover">
+                    <article class="col-4 card flex-col border-radius-10 overflow-hidden ">
+                        <div class="team-grid__img ratio-1x1">
+                            <img src="./img/team/ceo-1.svg" alt="CEO" class="img-content">
+                        </div>
                         <div class="item-padding-20 flex flex-col gap-5">
-                            <h4 class="bold">Trần Văn A</h4>
-                            <p class="text-xs text-color-primary uppercase">CEO & Founder</p>
+                            <h4 class="bold text-center">Trần Văn A</h4>
+                            <p class="text-xs text-center text-color-primary uppercase">CEO & Founder</p>
                         </div>
                     </article>
-                    <!-- Thêm các thẻ article cho Nguyễn Thị B, Lê Hoàng C, Phạm Minh D -->
+                    <article class="col-4 card flex-col border-radius-10 overflow-hidden ">
+                        <div class="team-grid__img ratio-1x1">
+                            <img src="./img/team/cto-1.svg" alt="CTO" class="img-content">
+                        </div>
+                        <div class="item-padding-20 flex flex-col gap-5">
+                            <h4 class="bold text-center">Nguyễn Thị B</h4>
+                            <p class="text-xs text-center text-color-primary uppercase">CHIEF OPERATING OFFICER</p>
+                        </div>
+                    </article>
+                    <article class="col-4 card flex-col border-radius-10 overflow-hidden ">
+                        <div class="team-grid__img ratio-1x1">
+                            <img src="./img/team/cmo-1.svg" alt="CMO" class="img-content">
+                        </div>
+                        <div class="item-padding-20 flex flex-col gap-5">
+                            <h4 class="bold text-center">Lê Văn C</h4>
+                            <p class="text-xs text-center text-color-primary uppercase">CHIEF TECHNOLOGY OFFICER</p>
+                        </div>
+                    </article>
+                    <article class="col-4 card flex-col border-radius-10 overflow-hidden ">
+                        <div class="team-grid__img ratio-1x1">
+                            <img src="./img/team/cfo-1.svg" alt="CFO" class="img-content">
+                        </div>
+                        <div class="item-padding-20 flex flex-col gap-5">
+                            <h4 class="bold text-center">Phạm Minh D</h4>
+                            <p class="text-xs text-center text-color-primary uppercase">HEAD OF MARKETING</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
