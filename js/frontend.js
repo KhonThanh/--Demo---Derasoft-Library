@@ -627,49 +627,49 @@ function initUniversalActiveMenu(menuSelector = '', activeClassName = 'active') 
 
 // Hàm tự động quét và gắn hiệu ứng Zoom
 function initAutoImageZoom(gallerySelector, zoomScale = 1.5) {
-    const galleries = document.querySelectorAll(gallerySelector);
-    if (galleries.length === 0) return;
+  const galleries = document.querySelectorAll(gallerySelector);
+  if (galleries.length === 0) return;
 
-    galleries.forEach(gallery => {
-        const items = gallery.querySelectorAll('.product-main__item');
+  galleries.forEach(gallery => {
+    const items = gallery.querySelectorAll('.product-main__item');
 
-        items.forEach(item => {
-            const img = item.querySelector('img');
-            const video = item.querySelector('iframe, video');
-            if (video) {
-                item.classList.add('is-video-item');
-                return; 
-            }
+    items.forEach(item => {
+      const img = item.querySelector('img');
+      const video = item.querySelector('iframe, video');
+      if (video) {
+        item.classList.add('is-video-item');
+        return;
+      }
 
-            if (img) {
-                item.classList.add('js-zoom-container', 'pos-rel', 'overflow-hidden');
+      if (img) {
+        item.classList.add('js-zoom-container', 'pos-rel', 'overflow-hidden');
 
-                item.addEventListener('mousemove', function(e) {
-                    
-                    if (gallery.swiper && gallery.swiper.autoplay) {
-                        gallery.swiper.autoplay.stop();
-                    }
+        item.addEventListener('mousemove', function (e) {
 
-                    const rect = item.getBoundingClientRect();
-                    const x = ((e.clientX - rect.left) / rect.width) * 100;
-                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+          if (gallery.swiper && gallery.swiper.autoplay) {
+            gallery.swiper.autoplay.stop();
+          }
 
-                    img.style.transformOrigin = `${x}% ${y}%`;
-                    img.style.transform = `scale(${zoomScale})`; // Xài biến zoomScale (1.5)
-                });
+          const rect = item.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
 
-                item.addEventListener('mouseleave', function() {
-                    
-                    img.style.transformOrigin = 'center';
-                    img.style.transform = 'scale(1)';
-
-                    if (gallery.swiper && gallery.swiper.autoplay) {
-                        gallery.swiper.autoplay.start();
-                    }
-                });
-            }
+          img.style.transformOrigin = `${x}% ${y}%`;
+          img.style.transform = `scale(${zoomScale})`; // Xài biến zoomScale (1.5)
         });
+
+        item.addEventListener('mouseleave', function () {
+
+          img.style.transformOrigin = 'center';
+          img.style.transform = 'scale(1)';
+
+          if (gallery.swiper && gallery.swiper.autoplay) {
+            gallery.swiper.autoplay.start();
+          }
+        });
+      }
     });
+  });
 }
 
 // ----------- Vùng gọi biến --------------
@@ -803,11 +803,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initToggleSystem([
       {
-        trigger: ".pagination-btn__custom.page-num",
-        behavior: "activate",
-        activeClass: "active",
-      },
-      {
         trigger: ".menu-container__bar",
         target: ".m-menu",
         behavior: "toggle",
@@ -816,7 +811,12 @@ document.addEventListener("DOMContentLoaded", () => {
         closeOnEsc: true,
         innerSelector: ".m-menu__link"
       },
-     
+      {
+        trigger: ".pagination-btn",
+        behavior: "activate",
+        activeClass: "active",
+      },
+
     ]);
     // 🟡 roll to the top
     initScrollToTop();

@@ -40,6 +40,10 @@
     .footer-top__content {
         width: 100%;
     }
+
+    .blog-container {
+        width: calc((100% - var(--gap) ) / 2);
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -109,7 +113,7 @@
     .products-section__cta {
         display: flex;
     }
-    
+
     .archive-description {
         display: none !important;
     }
@@ -120,6 +124,8 @@
         padding-bottom: 0px;
     }
 
+    .blog-main,
+    .blog-sidebar,
     .service-mini,
     .post-mini,
     .contact-card {

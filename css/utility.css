@@ -88,6 +88,7 @@
 .border-none {border: none;outline: none;}
 
 .text-sm {font-size: calc(var(--font-size-base) - 2px);}
+.text-md {font-size: calc(var(--font-size-base));}
 .text-xs {font-size: calc(var(--font-size-base) - 4px);}
 .text-red { color: var(--error-color);}
 

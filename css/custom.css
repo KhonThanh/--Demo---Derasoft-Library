@@ -346,6 +346,7 @@
 .card-tag {
     top: 10px;
     left: 10px;
+    font-size: calc(var(--font-size-base) - 2px);
 }
 
 .card-header {
@@ -420,6 +421,15 @@
     font-size: 14px;
 }
 
+.sidebar-news__item span {
+    font-size: calc(var(--font-size-base) + 20px);
+
+}
+
+.blog-container {
+    width: calc((100% - (var(--gap) * 2)) / 3);
+}
+
 /* css trang giới thiệu */
 .stats-section__title {
     font-size: calc(var(--font-size-base) + 18px);
@@ -456,7 +466,7 @@
 .blog-section {}
 
 .blog-main {
-    width: calc(65% - 20px);
+    width: calc(65% - 10px);
 }
 
 .blog-grid {}
@@ -468,7 +478,32 @@
 .blog-content {}
 
 .blog-sidebar {
-    width: calc(35% - 20px);
+    width: calc(35% - 10px);
+}
+
+.pagination-btn {
+    aspect-ratio: 1 / 1;
+    width: 36px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    transition: all 0.6s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.pagination-btn:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.pagination-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 15px;
 }
 
 /* css roll to top */
