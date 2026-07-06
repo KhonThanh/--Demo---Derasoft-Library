@@ -243,8 +243,8 @@ function initRevealEffect() {
       }
     });
   }, {
-    threshold: 0.15,
-    rootMargin: "0px 0px -50px 0px"
+    threshold: 0,
+    rootMargin: "0px 0px -100px 0px"
   });
   sections.forEach(sec => observer.observe(sec));
 }
@@ -672,6 +672,34 @@ function initAutoImageZoom(gallerySelector, zoomScale = 1.5) {
   });
 }
 
+function initStarRating(containerSelector = '.rate-stars', starSelector = '.star', activeClass = 'active') {
+  const containers = document.querySelectorAll(containerSelector);
+  if (!containers.length) return;
+  containers.forEach(container => {
+    const stars = Array.from(container.querySelectorAll(starSelector));
+    if (!stars.length) return;
+    const defaultActiveCount = container.querySelectorAll(`.${activeClass}`).length;
+    container.dataset.rating = defaultActiveCount || 0;
+    stars.forEach((star, index) => {
+      if (star.dataset._ratingBound === "true") return;
+      star.dataset._ratingBound = "true";
+      star.style.cursor = 'pointer';
+      star.addEventListener('click', () => {
+        const currentRating = index + 1;
+        container.dataset.rating = currentRating;
+        stars.forEach((s, i) => {
+          if (i < currentRating) {
+            s.classList.add(activeClass);
+          } else {
+            s.classList.remove(activeClass);
+          }
+        });
+
+      });
+    });
+  });
+}
+
 // ----------- Vùng gọi biến --------------
 document.addEventListener("DOMContentLoaded", () => {
   includeHTML(() => {
@@ -824,7 +852,9 @@ document.addEventListener("DOMContentLoaded", () => {
     applyImageEnhancements();
     initRevealEffect();
     initFormValidation();
-    initUniversalActiveMenu('.header-bottom__item', 'active')
+    initUniversalActiveMenu('.header-bottom__item', 'active');
+
+    initStarRating('.popup-comment__content .rate-stars', '.star', 'active');
   });
 });
 
