@@ -844,6 +844,16 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: "activate",
         activeClass: "active",
       },
+      {
+        trigger: ".btn-write-review",
+        target: ".popup-comment__container",
+        behavior: "toggle",
+        activeClass: "active",
+        closeOnOutside: true,
+        closeOnEsc: true,
+        innerSelector: ".popup-comment__content",
+        closeBtn: ".popup-comment__close"
+      },
 
     ]);
     // 🟡 roll to the top

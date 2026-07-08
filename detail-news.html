@@ -30,7 +30,7 @@
                 <a href="javascript:void(0)" class="nav-bar__item">"tên bài viết</a>
             </div>
         </section>
-        <section class="container-f bg-white-secondary container-padding">
+        <section class="container-f flex-col bg-white-secondary gap-30 container-padding">
             <div class="news-detail__container container-l flex flex-wrap gap-20">
 
                 <div class="news-detail__left flex flex-col gap-20">
@@ -163,9 +163,6 @@
                             mọi tiêu chí trên, hãy khám phá ngay kho giao diện cao cấp của chúng tôi. Chúc bạn xây dựng
                             thành công một website <u>độc đáo và bức phá doanh thu</u>!</p>
                     </div>
-
-                    <div class="review-section flex bg-white border-radius-5" data-include="./component/comment.html">
-                    </div>
                 </div>
 
                 <div class="news-detail__right flex flex-col gap-30">
@@ -173,10 +170,10 @@
                         <h3 class="bold text-md">Nhận thông tin cập nhật</h3>
                         <p class="text-sm text-color-deactive">Đăng ký newsletter để nhận các bài phân tích sâu sắc nhất
                             về thị trường B2B hàng tuần.</p>
-                        <form class="flex flex-col gap-10 js-validate-form form-group" novalidate>
+                        <form class="flex flex-col gap-10 js-validate-form form-group pos-rel" novalidate>
                             <input type="email" class="item-padding-10 border-radius-5 border-white"
                                 placeholder="Địa chỉ email của bạn" required>
-                            <span class="error-msg"></span>
+                            <span class="error-msg  pos-abs"></span>
                             <button type="submit" class="btn-primary active text-xs center-hor border-none bold">Đăng ký
                                 ngay</button>
                         </form>
@@ -268,13 +265,85 @@
 
                 </div>
             </div>
+            <div class="review-section container-l bg-white border-radius-5" data-include="./component/comment.html">
+            </div>
         </section>
     </main>
     <footer class="container-f bg-light-blue center-ver flex flex-col item-padding-80-0 gap-30"
         data-include="./component/footer.html"></footer>
     <div class="btntotop__container pos-fixed bg-white" data-include="./component/rolltotop.html" id="btnToTop">
     </div>
+    <div class="popup-comment__container pos-fixed z-index-2 center-ver center-hor container-f ">
+        <div class="popup-comment__content z-index-3 bg-white item-padding-40 border-radius-10 container-ts">
+            <form class="flex flex-col gap-30 js-validate-form flex-1">
+                <div class="popup-comment__header flex jus-sb">
+                    <div class="flex flex-col gap-10">
+                        <span class="text-color-deactive italic text-sm">CUNG CẤP PHẢN HỒI</span>
+                        <h2 class="uppercase bold">Viết phần đánh giá</h2>
+                    </div>
+                    <div class="popup-comment__close cursor-pointer bg-deactive border-radius-5 ratio-1x1 overflow-hidden item-padding-10">
+                        <img src="./img/icon/close.svg" class="img-icon" alt="">
+                    </div>
+                </div>
 
+                <div class="flex flex-wrap gap-20">
+                    <div class="flex-1 flex flex-col gap-10 form-group pos-rel">
+                        <label class="bold">Họ và tên</label>
+                        <input type="text" placeholder="John Architect" required="" data-msg="Vui lòng nhập họ tên"
+                            class="item-padding-10-20 border-radius-5 bg-white-secondary border-none fill-view">
+                        <span class="error-msg pos-abs"></span>
+                    </div>
+                    <div class="flex-1 flex flex-col gap-10 form-group pos-rel">
+                        <label class="bold">Email</label>
+                        <input type="email" placeholder="name@architect.core" required=""
+                            class="item-padding-10-20 border-radius-5 bg-white-secondary border-none fill-view">
+                        <span class="error-msg pos-abs"></span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-20">
+                    <div class="flex-1 flex flex-col gap-10 form-group pos-rel">
+                        <label class="bold">Số điện thoại</label>
+                        <input type="text" placeholder="Số điện thoại" required="" pattern="^[0-9]{10,11}$"
+                            data-msg="SĐT phải có 10-11 số"
+                            class="item-padding-10-20 border-radius-5 bg-white-secondary border-none fill-view">
+                        <span class="error-msg  pos-abs"></span>
+                    </div>
+                    <div class="flex-1 flex flex-col gap-10 form-group pos-rel">
+                        <label class="bold">Địa chỉ</label>
+                        <input type="text" placeholder="Địa chỉ" required=""
+                            class="item-padding-10-20 border-radius-5 bg-white-secondary border-none fill-view">
+                        <span class="error-msg  pos-abs"></span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-10 form-group pos-rel">
+                    <label class="bold">Nội dung</label>
+                    <textarea rows="4" required="" minlength="10" data-msg="Nội dung phải ít nhất 10 ký tự"
+                        class="item-padding-10-20 border-radius-5 bg-white-secondary border-none fill-view"></textarea>
+                    <span class="error-msg  pos-abs"></span>
+                </div>
+
+                <div class="flex flex-col gap-10 form-group pos-rel">
+                    <label class="bold">Mã bảo mật</label>
+                    <input type="text" required=""
+                        class="item-padding-10-20 border-radius-5 bg-white-second border-none fill-view">
+                    <span class="error-msg  pos-abs"></span>
+                </div>
+
+                <div class="flex gap-20">
+                    <button type="submit"
+                        class="btn-primary">
+                        Hủy &nbsp; →
+                    </button>
+                    <button type="submit"
+                        class="btn-primary active">
+                        Gửi đánh giá &nbsp; →
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script defer type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

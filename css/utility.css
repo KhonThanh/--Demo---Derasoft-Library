@@ -93,7 +93,8 @@
 .text-red { color: var(--error-color);}
 
 @media (max-width: 1024px) { .col-4, .col-5, .col-6 { width: calc((100% - (var(--gap) * 2)) / 3); } .col-section-2 {width: 100%}}
-@media (max-width: 768px) {.item-padding-80-40 { padding: 30px; } .item-padding-40 { padding: 20px; } .gap-20{gap: 10px} .col-3,.col-4,.col-5 {width: calc((100% - var(--gap)) / 2);}  .item-padding-20{ padding: 10px;}  .item-padding-30{ padding: 10px;} }
+@media (max-width: 768px) {.item-padding-80-40 { padding: 30px; }.text-header-size{ font-size: calc(var(--font-size-base) + 10px) !important;}
+ .item-padding-40 { padding: 20px; } .gap-20{gap: 10px} .col-3,.col-4,.col-5 {width: calc((100% - var(--gap)) / 2);}  .item-padding-20{ padding: 10px;}  .item-padding-30{ padding: 10px;} }
 @media (max-width: 600px) {
   :root {
     --gap: 10px;
@@ -128,7 +129,7 @@
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
-.text-header-size{ font-size: 38px;}
+.text-header-size{ font-size: calc(var(--font-size-base) + 20px);}
 .pos-rel { position: relative; }
 .pos-abs { position: absolute; }
 .pos-fixed { position: fixed; }
