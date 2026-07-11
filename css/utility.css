@@ -58,6 +58,7 @@
 .z-index-4 { z-index: 4; } 
 .z-index-5 { z-index: 5; } 
 .ratio-1x1 { aspect-ratio: 1 / 1; width: 100%;}
+.ratio-4x3 { aspect-ratio: 4 / 3;width: 100%;}
 .ratio-16x9 { aspect-ratio: 16 / 9;width: 100%;}
 .border-radius-15 { border-radius: 15px; }
 .border-radius-10 { border-radius: 10px; }
@@ -91,7 +92,7 @@
 .text-md {font-size: calc(var(--font-size-base));}
 .text-xs {font-size: calc(var(--font-size-base) - 4px);}
 .text-red { color: var(--error-color);}
-
+@media (max-width: 1300px) { .col-6 {  width: calc((100% - (var(--gap) * 4)) / 5);}}
 @media (max-width: 1024px) { .col-4, .col-5, .col-6 { width: calc((100% - (var(--gap) * 2)) / 3); } .col-section-2 {width: 100%}}
 @media (max-width: 768px) {.item-padding-80-40 { padding: 30px; }.text-header-size{ font-size: calc(var(--font-size-base) + 10px) !important;}
  .item-padding-40 { padding: 20px; } .gap-20{gap: 10px} .col-3,.col-4,.col-5 {width: calc((100% - var(--gap)) / 2);}  .item-padding-20{ padding: 10px;}  .item-padding-30{ padding: 10px;} }
@@ -100,7 +101,9 @@
     --gap: 10px;
   }
   
-  .col-2, .col-3, .col-4, .col-5, .col-6 {width: 100%;}
+  .col-2, .col-3, .col-4, .col-5 {width: 100%;}
+   
+  .col-6 {width: calc((100% - var(--gap)) / 2);}
 }
 
 @media (max-width: 480px) {.col-2,.col-3,.col-4,.col-5 { width: 100%;}}
@@ -162,3 +165,6 @@
 .form-group.error .error-msg { display: block;}
 .form-group.error input,
 .form-group.error textarea { border: 1px solid var(--error-color);background-color: #fff5f5;}
+
+.card-tag { position: absolute; font-size: calc(var(--font-size-base) - 2px); top: 10px; left: 10px; z-index: 5; white-space: nowrap; background-color: var(--primary-color); padding:5px 10px; border-radius: 5px; color:var(--white-color)}
+.card-tag.tag-right { left: auto; right: 10px;}

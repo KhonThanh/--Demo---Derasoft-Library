@@ -75,7 +75,25 @@
 
 @media screen and (max-width: 835px) {}
 
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .mobile-filter{
+        display: flex;
+    }
+
+    .layout-sidebar {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+
+    .filter-widget__list,
+    .filter-widget__title {
+        display: none !important;
+    }
+}
 
 
 /* @media screen and (min-width: 769px) {} */

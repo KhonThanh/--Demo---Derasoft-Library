@@ -334,12 +334,6 @@
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card-tag {
-    top: 10px;
-    left: 10px;
-    font-size: calc(var(--font-size-base) - 2px);
-}
-
 .card-header {
     aspect-ratio: 448 / 192;
 }
@@ -943,4 +937,18 @@
 
 .error-msg{
     top: 100%;
+}
+
+/* css product */
+.layout-sidebar{
+    flex: 0 0 150px;
+}
+
+.layout-content{
+    flex: 1 1 auto;
+}
+
+.mobile-filter{
+    display: none;
+    width: 100%;
 }

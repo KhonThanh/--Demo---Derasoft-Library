@@ -29,6 +29,703 @@
                 <a href="javascript:void(0)" class="nav-bar__item">Sản phẩm</a>
             </div>
         </section>
+        <section class="page-layout item-padding-20 flex align-start gap-20">
+            <div class="layout-sidebar flex flex-col gap-10">
+                <p class="filter-widget__title bold text-md">Danh mục</p>
+                <ul class="filter-widget__list flex flex-col gap-10">
+                    <li class="filter-item flex align-center gap-10 cursor-pointer">
+                        <input type="checkbox" id="cat-all" checked>
+                        <label for="cat-all" class="text-sm cursor-pointer">Tất cả Layouts</label>
+                    </li>
+                    <li class="filter-item flex align-center gap-10 cursor-pointer">
+                        <input type="checkbox" id="cat-landing">
+                        <label for="cat-landing" class="text-sm cursor-pointer">Landing Pages</label>
+                    </li>
+                    <li class="filter-item flex align-center gap-10 cursor-pointer">
+                        <input type="checkbox" id="cat-ecom">
+                        <label for="cat-ecom" class="text-sm cursor-pointer">E-commerce</label>
+                    </li>
+                    <li class="filter-item flex align-center gap-10 cursor-pointer">
+                        <input type="checkbox" id="cat-dash">
+                        <label for="cat-dash" class="text-sm cursor-pointer">Dashboards</label>
+                    </li>
+                </ul>
+                <p class="filter-widget__title bold text-md">Công nghệ</p>
+                <ul class="filter-widget__list flex flex-col gap-10" style="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                    <li class="filter-item flex align-center gap-10 cursor-pointer">
+                        <input type="checkbox" id="tech-react" checked>
+                        <label for="tech-react" class="text-sm cursor-pointer">React</label>
+                    </li>
+                    <li class="filter-item flex align-center gap-10 cursor-pointer">
+                        <input type="checkbox" id="tech-vue">
+                        <label for="tech-vue" class="text-sm cursor-pointer">Vue</label>
+                    </li>
+                    <li class="filter-item flex align-center gap-10 cursor-pointer">
+                        <input type="checkbox" id="tech-wp">
+                        <label for="tech-wp" class="text-sm cursor-pointer">WordPress</label>
+                    </li>
+                    <li class="filter-item flex align-center gap-10 cursor-pointer">
+                        <input type="checkbox" id="tech-html">
+                        <label for="tech-html" class="text-sm cursor-pointer">HTML/CSS</label>
+                    </li>
+                </ul>
+                <div class="mobile-filter flex-col gap-10 ">
+
+                    <label for="mobile-filter-select" class="mobile-filter__title bold text-md">Bộ lọc tìm kiếm</label>
+
+                    <div class="item-padding-10 mobile-filter__content custom-item">
+                        <select id="mobile-filter-select" class="mobile-filter__select  cursor-pointer bg-white">
+                        <optgroup label="--- Danh mục ---">
+                            <option value="cat-all" selected>Tất cả Layouts</option>
+                            <option value="cat-landing">Landing Pages</option>
+                            <option value="cat-ecommerce">E-commerce</option>
+                            <option value="cat-dashboard">Dashboards</option>
+                        </optgroup>
+
+                        <optgroup label="--- Công nghệ ---">
+                            <option value="tech-react">React</option>
+                            <option value="tech-vue">Vue</option>
+                            <option value="tech-wordpress">WordPress</option>
+                            <option value="tech-html">HTML/CSS</option>
+                        </optgroup>
+
+                    </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-content flex flex-col gap-20">
+
+                <div class="content-top flex jus-sb align-center">
+                    <div class="text-header-size bold">Layouts Nổi Bật</div>
+                    <div class="sort-dropdown flex align-center gap-10">
+                        <p class="text-sm un-wrap text-color-deactive">Sắp xếp:</p>
+                        <select
+                            class="border-primary border-radius-5 item-padding-5-10 text-sm cursor-pointer border-none">
+                            <option>Mới nhất</option>
+                            <option>Bán chạy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="product-grid flex flex-wrap gap-20">
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col-6 flex-col hover-border-primary pos-rel">
+                        <div class="product-card__image-wrap ratio-3x4 overflow-hidden pos-rel">
+                            <img src="./img/product/pressgrid.svg" alt="SaaS Admin Pro" class="img-content">
+                            <span class="card-tag tag-right">React</span>
+                             <a href="./detail-product.html" class="link-overlay" aria-label="Xem chi tiết"></a>
+                        </div>
+
+                        <div class="product-card__info flex-1 flex flex-col gap-10 item-padding-10">
+                            <div class="product-title bold text-md clamp-text clamp-line-one">SaaS Admin Pro</div>
+                            <p class="product-desc text-sm text-color-deactive clamp-text clamp-line-two"
+                                >
+                                Dashboard hoàn chỉnh cho dự án SaaS với 50+ components.
+                            </p>
+
+                            <div class="product-meta flex jus-sb align-center ">
+                                <span class="product-price bold text-color-primary">1,500,000 VND</span>
+                                <div class="flex align-center gap-2 text-sm">
+                                    <span class="text-red">★</span>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-10">
+                                <a href="javascript:void(0)"
+                                    class="btn-primary flex-1 text-sm text-center border-primary">
+                                    Xem Demo
+                                </a>
+                                <a href="javascript:void(0)" class="btn-primary active flex-1 text-sm text-center">
+                                    Mua Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="pagination-wrapper flex center-hor gap-5 item-padding-40-20">
+                    <a href="#"
+                        class="flex center-hor center-ver border-radius-5 custom-item__low text-sm hover-border-primary"
+                        style="width: 35px; height: 35px; text-decoration: none; color: inherit;">&lt;</a>
+                    <a href="#"
+                        class="active flex center-hor center-ver border-radius-5 bg-primary text-color-white text-sm"
+                        style="width: 35px; height: 35px; text-decoration: none;">1</a>
+                    <a href="#"
+                        class="flex center-hor center-ver border-radius-5 custom-item__low text-sm hover-border-primary"
+                        style="width: 35px; height: 35px; text-decoration: none; color: inherit;">2</a>
+                    <a href="#"
+                        class="flex center-hor center-ver border-radius-5 custom-item__low text-sm hover-border-primary"
+                        style="width: 35px; height: 35px; text-decoration: none; color: inherit;">3</a>
+                    <a href="#"
+                        class="flex center-hor center-ver border-radius-5 custom-item__low text-sm hover-border-primary"
+                        style="width: 35px; height: 35px; text-decoration: none; color: inherit;">&gt;</a>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer class="container-f bg-light-blue center-ver flex flex-col item-padding-80-0 gap-30"
         data-include="./component/footer.html"></footer>
