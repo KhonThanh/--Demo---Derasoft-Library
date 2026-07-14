@@ -116,6 +116,8 @@
         font-size: calc(var(--font-size-base) + 10px);
     }
 
+     .blog-main,
+    .blog-sidebar,
     .archive-item--large,
     .archive-item--small {
         width: 100%;
@@ -139,6 +141,8 @@
     .archive-description {
         display: none !important;
     }
+
+   
 }
 
 @media screen and (max-width: 590px) {
@@ -148,8 +152,6 @@
 
     .news-detail__left,
     .news-detail__right,
-    .blog-main,
-    .blog-sidebar,
     .service-mini,
     .post-mini,
     .contact-card {
