@@ -700,6 +700,28 @@ function initStarRating(containerSelector = '.rate-stars', starSelector = '.star
   });
 }
 
+// js chống cls lưới sản phẩm
+function initSkeletonLoader(options = {}) {
+    const skeletonContainer = document.getElementById(options.skeletonId || 'skeleton-data');
+    const realContainer = document.getElementById(options.realDataId || 'real-data');
+    const delay = options.delay || 2000;
+
+    if (!skeletonContainer || !realContainer) return;
+
+    const firstSkeleton = skeletonContainer.firstElementChild;
+    
+    if (firstSkeleton && options.count) {
+        const template = firstSkeleton.outerHTML;
+        skeletonContainer.innerHTML = template.repeat(options.count - 1); 
+        skeletonContainer.insertAdjacentHTML('afterbegin', template);
+    }
+
+    setTimeout(() => {
+        skeletonContainer.classList.add('is-hidden');
+        realContainer.classList.remove('is-hidden');
+    }, delay);
+}
+
 // ----------- Vùng gọi biến --------------
 document.addEventListener("DOMContentLoaded", () => {
   includeHTML(() => {
@@ -840,9 +862,10 @@ document.addEventListener("DOMContentLoaded", () => {
         innerSelector: ".m-menu__link"
       },
       {
-        trigger: ".pagination-btn",
+        trigger: ".pagination-wrapper .pagination-btn",
         behavior: "activate",
         activeClass: "active",
+        groupSelector: ".pagination-wrapper .pagination-btn",
       },
       {
         trigger: ".btn-write-review",
@@ -856,6 +879,11 @@ document.addEventListener("DOMContentLoaded", () => {
       },
 
     ]);
+    initSkeletonLoader({
+      skeletonId: 'skeleton-data',
+      realDataId: 'real-data',
+      delay: 2000
+    });
     // 🟡 roll to the top
     initScrollToTop();
     // ✨ 4️⃣ HIỆU ỨNG ẢNH & REVEAL

@@ -15,6 +15,10 @@
     z-index: 99;
 }
 
+.header-container{
+    min-height: 52px
+}
+
 .menu-list {
     top: 100%;
     left: 0;
@@ -28,10 +32,6 @@
 
 .menu-container__item.active {
     border-bottom: 2px solid var(--primary-color);
-}
-
-.menu-container__item.active a {
-    color: var(--primary-color);
 }
 
 .menu-container__item {
@@ -165,12 +165,40 @@
     display: none;
 }
 
+.menu-container__bar,
+.user-login,
+.cart-box{
+    max-width: 30px;
+}
+
 /* css trang chủ mới */
 
 .icon-font-text {
     font-family: serif;
     font-size: 16px;
     line-height: 1;
+}
+
+.filter-right__btn {
+    background-color: var(--white-color);
+}
+
+.filter-right__btn svg {
+    stroke: var(--black-color);
+    fill: none; 
+}
+
+.filter-right__btn.active {
+    background-color: var(--primary-color) !important;
+}
+
+.filter-right__btn.active svg {
+    stroke: var(--white-color);
+    fill: none; 
+}
+
+.is-hidden {
+    display: none !important;
 }
 
 /* Các cục màu ở nút Color */
@@ -689,6 +717,11 @@
 }
 
 /* css footer */
+.footer-logo{
+    aspect-ratio: 56 / 13 ;
+    max-width: 289px;
+}
+
 .icon-md,
 .social-links__img {
     max-width: 32px;
