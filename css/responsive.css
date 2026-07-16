@@ -10,6 +10,10 @@
     .real-data {
         aspect-ratio: 1179 / 1381.38;
     }
+
+    .ssl-product__warranty {
+        width: calc((100% - (var(--gap)))/ 2);
+    }
 }
 
 @media screen and (max-width: 1073px) {
@@ -51,6 +55,18 @@
 
     .blog-container {
         width: calc((100% - var(--gap)) / 2);
+    }
+
+    .ssl-product__container{
+        flex-direction: column;
+    }
+
+    .ssl-product__content {
+        flex: 1 1 auto;
+    }
+
+    .ssl-product__payment {
+        flex: 1 1 auto;
     }
 }
 
@@ -153,8 +169,8 @@
 
 }
 
-@media screen and ( max-wdith: 600px){
-     .real-data {
+@media screen and (max-wdith: 600px) {
+    .real-data {
         aspect-ratio: 580 / 3394.25;
     }
 }

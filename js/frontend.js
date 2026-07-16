@@ -84,20 +84,31 @@ function initToggleSystem(configs = []) {
         }
 
         // ---- behavior activate (tab-like) ----
+        // ---- behavior activate (tab-like: chỉ mở, không tắt khi bấm lại) ----
         if (behavior === "activate") {
-          if (groupSelector) {
-            document.querySelectorAll(groupSelector).forEach(el => el.classList.remove(activeClass));
-          } else {
-            triggers.forEach(t => t.classList.remove(activeClass));
-          }
+          const scope = groupSelector ? document.querySelectorAll(groupSelector) : triggers;
+          scope.forEach(el => el.classList.remove(activeClass));
           trigger.classList.add(activeClass);
-
-          if (targets.length > 0 && targetEl) {
+          if (targetEl) {
             targets.forEach(t => t.classList.remove(activeClass));
             targetEl.classList.add(activeClass);
           }
         }
+        // ---- radio mode (bấm mở, bấm lại tắt, các cái khác tắt) ----
+        else if (behavior === "radio") {
+          const isCurrentlyActive = trigger.classList.contains(activeClass);
 
+          // Luôn dọn dẹp nhóm trước
+          const scope = groupSelector ? document.querySelectorAll(groupSelector) : triggers;
+          scope.forEach(el => el.classList.remove(activeClass));
+          targets.forEach(t => t.classList.remove(activeClass));
+
+          // Nếu nó chưa active thì bật lên, còn đã active rồi thì thôi (tự tắt)
+          if (!isCurrentlyActive) {
+            trigger.classList.add(activeClass);
+            if (targetEl) targetEl.classList.add(activeClass);
+          }
+        }
         // ---- toggle mode ----
         else {
           if (targetEl) targetEl.classList.toggle(activeClass);
@@ -702,24 +713,24 @@ function initStarRating(containerSelector = '.rate-stars', starSelector = '.star
 
 // js chống cls lưới sản phẩm
 function initSkeletonLoader(options = {}) {
-    const skeletonContainer = document.getElementById(options.skeletonId || 'skeleton-data');
-    const realContainer = document.getElementById(options.realDataId || 'real-data');
-    const delay = options.delay || 2000;
+  const skeletonContainer = document.getElementById(options.skeletonId || 'skeleton-data');
+  const realContainer = document.getElementById(options.realDataId || 'real-data');
+  const delay = options.delay || 2000;
 
-    if (!skeletonContainer || !realContainer) return;
+  if (!skeletonContainer || !realContainer) return;
 
-    const firstSkeleton = skeletonContainer.firstElementChild;
-    
-    if (firstSkeleton && options.count) {
-        const template = firstSkeleton.outerHTML;
-        skeletonContainer.innerHTML = template.repeat(options.count - 1); 
-        skeletonContainer.insertAdjacentHTML('afterbegin', template);
-    }
+  const firstSkeleton = skeletonContainer.firstElementChild;
 
-    setTimeout(() => {
-        skeletonContainer.classList.add('is-hidden');
-        realContainer.classList.remove('is-hidden');
-    }, delay);
+  if (firstSkeleton && options.count) {
+    const template = firstSkeleton.outerHTML;
+    skeletonContainer.innerHTML = template.repeat(options.count - 1);
+    skeletonContainer.insertAdjacentHTML('afterbegin', template);
+  }
+
+  setTimeout(() => {
+    skeletonContainer.classList.add('is-hidden');
+    realContainer.classList.remove('is-hidden');
+  }, delay);
 }
 
 // ----------- Vùng gọi biến --------------
@@ -876,6 +887,12 @@ document.addEventListener("DOMContentLoaded", () => {
         closeOnEsc: true,
         innerSelector: ".popup-comment__content",
         closeBtn: ".popup-comment__close"
+      },
+      {
+        trigger: ".ssl-faq__item .ssl-faq__btn",
+        target: ".ssl-faq__des",
+        behavior: "radio",
+        activeClass: "active",
       },
 
     ]);

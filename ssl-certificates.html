@@ -21,60 +21,163 @@
 </head>
 
 <body>
-    <header class="container-f bg-black " data-include="./component/header.html"></header>
-    <main class="container-f flex flex-col center-hor pos-rel">
-        <section class="bg-gray container-f">
+    <header class=" bg-black " data-include="./component/header.html"></header>
+    <main class="">
+        <section class="bg-gray ">
             <div class="container-xl nav-bar__container">
                 <a href="./index.html" class="nav-bar__item">Trang chủ</a>
                 <a href="javascript:void(0)" class="nav-bar__item">Chứng chỉ SSL</a>
             </div>
         </section>
-        <section class="container-xl container-padding flex-col gap-20">
-            <div class="flex gap-30 flex-wrap">
-                <div class="flex-1">
-                    <span class="badge-blue">Bảo mật cấp Doanh nghiệp</span>
-                    <h1 class="text-xl bold">SSL Doanh Nghiệp (OV)</h1>
-                    <p class="text-sm text-color-deactive">Chứng chỉ Organization Validation (OV) cung cấp mức độ mã hóa
-                        cao và xác thực danh tính doanh nghiệp của bạn.</p>
+        <section class=" item-padding-80-0 bg-light-purple">
+            <div class="ssl-product__container container-xl flex gap-20  ">
+                <div class="ssl-product__content flex flex-col gap-20 card item-padding-20  bg-white">
+                    <div class="badge-blue bg-light-purple item-padding-10 flex gap-10">
+                        <img class="badge-blue__icon img-icon" src="./img/icon/badge-blue-shield.svg" alt="">
+                        <span class="un-wrap">Bảo mật cấp Doanh nghiệp</span>
+                    </div>
+                    <h1 class=" bold ">SSL Doanh Nghiệp (OV)</h1>
+                    <p class=" text-color-deactive ">
+                        Chứng chỉ Organization Validation (OV) cung cấp mức độ mã hóa cao và xác
+                        thực danh tính doanh nghiệp của bạn, tăng cường độ tin cậy tối đa cho khách
+                        hàng khi giao dịch trực tuyến.
+                    </p>
+
+                    <div class="flex gap-20 flex-wrap">
+                        <div class="ssl-product__warranty card flex-col item-padding-10 gap-5 bg-light-purple">
+                            <div class="ssl-product__warranty__item ratio-1x1"><img class="img-icon"
+                                    src="./img/icon/ssl-shield.svg" alt="icon"></div>
+                            <span class="">Cấp độ xác thực</span>
+                            <b>OV (Organization)</b>
+                        </div>
+                        <div class="ssl-product__warranty card flex-col item-padding-10 gap-5 bg-light-purple">
+                            <div class="ssl-product__warranty__item ratio-1x1"><img class="img-icon"
+                                    src="./img/icon/ssl-dollar.svg" alt="icon"></div>
+                            <span class="">Bảo hiểm</span>
+                            <b>$1.25M USD</b>
+                        </div>
+                        <div class="ssl-product__warranty card flex-col item-padding-10 gap-5 bg-light-purple">
+                            <div class="ssl-product__warranty__item ratio-1x1"><img class="img-icon"
+                                    src="./img/icon/ssl-clock.svg" alt="icon"></div>
+                            <span class="">Thời gian cấp</span>
+                            <b>1 - 3 Ngày</b>
+                        </div>
+                        <div class="ssl-product__warranty card flex-col item-padding-10 gap-5 bg-light-purple">
+                            <div class="ssl-product__warranty__item ratio-1x1"><img class="img-icon"
+                                    src="./img/icon/ssl-lock.svg" alt="icon"></div>
+                            <span class="">Mã hóa</span>
+                            <b>SHA-2 & 2048-bit</b>
+                        </div>
+                    </div>
                 </div>
-                <div class="card item-padding-20">
-                    <p class="text-lg text-primary bold">2.490.000đ <span class="text-sm">/năm</span></p>
-                    <a href="#" class="btn-primary active text-center">Đăng ký ngay</a>
+                <div class="ssl-product__payment card item-padding-20 bg-white flex flex-col gap-10 ">
+                    <h3 class="bold">Đăng ký dịch vụ</h3>
+                    <p class="text-lg text-primary bold ">2.490.000đ
+                        <span class=" text-color-deactive">/năm</span>
+                    </p>
+                    <ul class="flex flex-col gap-10 item-padding-0-20 ">
+                        <li>✓ Bảo vệ 1 tên miền chính xác</li>
+                        <li>✓ Hiển thị tên công ty trên chứng chỉ</li>
+                        <li>✓ Cấp lại miễn phí không giới hạn</li>
+                        <li>✓ Hỗ trợ kỹ thuật 24/7</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-primary active w-full  text-center">Đăng ký cấu hình
+                        ngay</a>
+                    <p class=" text-center  text-color-deactive">Hoàn tiền 30 ngày nếu không hài lòng.</p>
                 </div>
             </div>
-
-            <div class="item-padding-40-0">
-                <h2 class="text-lg bold text-center">Quy trình thiết lập 3 bước</h2>
-                <div class="flex gap-20 flex-wrap mt-20">
-                    <div class="card flex-1 item-padding-20">
-                        <div class="img-icon"><img src="./icon/step-1.png" alt="Bước 1"></div>
-                        <h4 class="bold">Gửi yêu cầu & Hồ sơ</h4>
-                    </div>
-                    <div class="card flex-1 item-padding-20">
-                        <div class="img-icon"><img src="./icon/step-2.png" alt="Bước 2"></div>
-                        <h4 class="bold">Xác thực Tổ chức</h4>
-                    </div>
-                    <div class="card flex-1 item-padding-20">
-                        <div class="img-icon"><img src="./icon/step-3.png" alt="Bước 3"></div>
-                        <h4 class="bold">Nhận & Cài đặt SSL</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-light-blue item-padding-30 border-radius-10">
-                <h2 class="text-center bold">Câu hỏi thường gặp</h2>
-                <div class="card item-padding-20 mt-20">
-                    <div class="flex jus-sb">
-                        <span>SSL OV khác gì so với SSL DV?</span>
-                        <div class="img-icon"><img src="./icon/chevron-down.png" alt="Icon"></div>
-                    </div>
-                </div>
-            </div>
-
         </section>
+        <section class="item-padding-80-0">
+            <div class="container-xl  flex-col gap-20">
+                <h2 class="text-lg bold text-center">Quy trình thiết lập 3 bước</h2>
+                <div class="ssl-process__container flex gap-20 center-hor flex-wrap">
 
+                    <div class="ssl-process__item card col-3 flex-col gap-10 item-padding-20">
+                        <div class="ratio-1x1 ssl-process__img"><img src="./img/icon/step-1.svg" class="img-icon"
+                                alt="icon"></div>
+                        <h4 class="bold">Gửi yêu cầu & Hồ sơ</h4>
+                        <p class="text-sm text-color-deactive">Tạo CSR từ máy chủ của bạn và cung cấp các tài liệu pháp
+                            lý
+                            cơ bản để chứng minh sự tồn tại của doanh nghiệp.</p>
+                    </div>
+
+                    <div class="ssl-process__item card col-3 flex-col gap-10 item-padding-20">
+                        <div class="ratio-1x1 ssl-process__img"><img src="./img/icon/step-2.svg" class="img-icon"
+                                alt="icon"></div>
+                        <h4 class="bold">Xác thực Tổ chức</h4>
+                        <p class="text-sm text-color-deactive">Cơ quan cấp chứng chỉ (CA) sẽ tiến hành kiểm tra và gọi
+                            điện
+                            xác nhận thông tin doanh nghiệp theo hồ sơ đã gửi.</p>
+                    </div>
+
+                    <div class="ssl-process__item card col-3 flex-col gap-10 item-padding-20">
+                        <div class="ratio-1x1 ssl-process__img"><img src="./img/icon/step-3.svg" class="img-icon"
+                                alt="icon"></div>
+                        <h4 class="bold">Nhận & Cài đặt SSL</h4>
+                        <p class="text-sm text-color-deactive">Nhận file chứng chỉ qua email và tiến hành cài đặt lên
+                            máy
+                            chủ web của bạn. Hỗ trợ kỹ thuật sẽ hỗ trợ nếu cần.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="item-padding-80-0 bg-light-purple">
+            <div class="container-s ssl-faq__container flex-col flex gap-20 border-radius-10">
+                <h2 class="text-center bold">Câu hỏi thường gặp về SSL OV</h2>
+
+                <div class="ssl-faq__item card item-padding-20 gap-10 flex-col bg-white">
+                    <div class="flex jus-sb align-center">
+                        <span class="bold">Thời gian để hoàn tất xác thực SSL OV là bao lâu?</span>
+                        <div class="img-icon ssl-faq__btn"><img src="./img/icon/chevron-down.svg" alt="icon"></div>
+                    </div>
+                    <p class="text-sm text-color-deactive ssl-faq__des">Thông thường từ 1 đến 3 ngày làm việc. Thời gian
+                        nhanh hay chậm phụ thuộc vào việc doanh nghiệp cung cấp thông tin xác thực cho CA có chính xác
+                        và đầy đủ ngay từ đầu hay không.</p>
+                </div>
+
+                <div class="ssl-faq__item card item-padding-20 gap-10 flex-col bg-white">
+                    <div class="flex jus-sb align-center">
+                        <span class="bold">Đăng ký SSL OV có bắt buộc cần giấy phép kinh doanh?</span>
+                        <div class="img-icon ssl-faq__btn"><img src="./img/icon/chevron-down.svg" alt="icon"></div>
+                    </div>
+                    <p class="text-sm text-color-deactive ssl-faq__des">Có. Vì SSL OV yêu cầu xác thực danh tính pháp
+                        lý, nên bồ bắt buộc phải có giấy phép kinh doanh hoặc các tài liệu tương đương được cơ quan nhà
+                        nước công nhận để CA đối chiếu.</p>
+                </div>
+
+                <div class="ssl-faq__item card item-padding-20 gap-10 flex-col bg-white">
+                    <div class="flex jus-sb align-center">
+                        <span class="bold">Một chứng chỉ SSL OV có hỗ trợ bảo mật cho nhiều tên miền không?</span>
+                        <div class="img-icon ssl-faq__btn"><img src="./img/icon/chevron-down.svg" alt="icon"></div>
+                    </div>
+                    <p class="text-sm text-color-deactive ssl-faq__des">Có, nếu bồ mua loại Multi-Domain SSL OV hoặc
+                        Wildcard SSL OV. Loại cơ bản chỉ hỗ trợ 1 tên miền chính, bồ cần chọn đúng cấu hình ngay khi
+                        đăng ký.</p>
+                </div>
+
+                <div class="ssl-faq__item card item-padding-20 gap-10 flex-col bg-white">
+                    <div class="flex jus-sb align-center">
+                        <span class="bold">Tại sao các trang TMĐT nên ưu tiên chọn SSL OV?</span>
+                        <div class="img-icon ssl-faq__btn"><img src="./img/icon/chevron-down.svg" alt="icon"></div>
+                    </div>
+                    <p class="text-sm text-color-deactive ssl-faq__des">Vì SSL OV hiển thị tên công ty của bồ trong phần
+                        thông tin chứng chỉ. Khách hàng nhìn thấy tên doanh nghiệp uy tín sẽ yên tâm xuống tiền hơn là
+                        một trang web chỉ xác thực tên miền sơ sài.</p>
+                </div>
+
+                <div class="ssl-faq__item card item-padding-20 gap-10 flex-col bg-white">
+                    <div class="flex jus-sb align-center">
+                        <span class="bold">SSL OV có hiển thị tên công ty trực tiếp trên thanh địa chỉ không?</span>
+                        <div class="img-icon ssl-faq__btn"><img src="./img/icon/chevron-down.svg" alt="icon"></div>
+                    </div>
+                    <p class="text-sm text-color-deactive ssl-faq__des">Hiện nay, đa số các trình duyệt đã bỏ hiển thị
+                        tên công ty trên thanh địa chỉ để tối giản giao diện. Tuy nhiên, tên công ty vẫn nằm trang trọng
+                        trong phần "Certificate Details" khi người dùng nhấp vào biểu tượng ổ khóa.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="container-f bg-light-blue center-ver flex flex-col item-padding-80-0 gap-30"
+    <footer class=" bg-light-blue center-ver flex flex-col item-padding-80-0 gap-30"
         data-include="./component/footer.html"></footer>
     <div class="btntotop__container pos-fixed hite" data-include="./component/rolltotop.html" id="btnToTop">
     </div>

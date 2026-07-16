@@ -15,7 +15,7 @@
     z-index: 99;
 }
 
-.header-container{
+.header-container {
     min-height: 52px
 }
 
@@ -167,7 +167,7 @@
 
 .menu-container__bar,
 .user-login,
-.cart-box{
+.cart-box {
     max-width: 30px;
 }
 
@@ -185,7 +185,7 @@
 
 .filter-right__btn svg {
     stroke: var(--black-color);
-    fill: none; 
+    fill: none;
 }
 
 .filter-right__btn.active {
@@ -194,7 +194,7 @@
 
 .filter-right__btn.active svg {
     stroke: var(--white-color);
-    fill: none; 
+    fill: none;
 }
 
 .is-hidden {
@@ -554,6 +554,38 @@
     color: var(--primary-color, #ff9800);
 }
 
+/* giối thiệu ssl */
+.ssl-product__container {}
+
+.ssl-product__content {
+    flex: 1 1 auto;
+}
+
+.ssl-product__payment {
+    flex: 0 0 450px;
+}
+
+.badge-blue {
+    width: fit-content;
+}
+
+.ssl-process__img,
+.ssl-product__warranty__item {
+    max-width: 32px;
+}
+
+.ssl-product__warranty{
+    width: calc((100% - (var(--gap) * 3) )/ 4);
+}
+
+.ssl-faq__des{
+    display: none;
+}
+
+.ssl-faq__des.active{
+    display: block;
+}
+
 /* css roll to top */
 .btntotop__container {
     position: fixed;
@@ -717,8 +749,8 @@
 }
 
 /* css footer */
-.footer-logo{
-    aspect-ratio: 56 / 13 ;
+.footer-logo {
+    aspect-ratio: 56 / 13;
     max-width: 289px;
 }
 
