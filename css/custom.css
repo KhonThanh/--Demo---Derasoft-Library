@@ -171,6 +171,31 @@
     max-width: 30px;
 }
 
+.user-login__container {
+    top: 100%;
+    right: 0;
+    height: 0px;
+    padding: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.user-login__container a{
+    font: 0px;
+}
+
+.user-login:hover .user-login__container{
+    height: fit-content;
+    padding : 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.user-login:hover .user-login__container a{
+    font-size: var(--font-size-base);
+}
+
 /* css trang chủ mới */
 
 .icon-font-text {
@@ -591,7 +616,6 @@
 .help-center__item .ratio-1x1 {
     max-width: 32px;
 }
-
 
 /* css roll to top */
 .btntotop__container {
