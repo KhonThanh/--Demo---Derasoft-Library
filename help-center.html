@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện | Chứng chỉ SSL</title>
+    <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="./img/banner/banner-home.webp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- <link rel="stylesheet" href="../css/style.min.css"> -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/swiper-custom.css">
+
+</head>
+
+<body>
+    <header class=" bg-black " data-include="./component/header.html"></header>
+    <main class="">
+        <section class="bg-gray ">
+            <div class="container-xl nav-bar__container">
+                <a href="./index.html" class="nav-bar__item">Trang chủ</a>
+                <a href="javascript:void(0)" class="nav-bar__item">Trung tâm hỗ trợ</a>
+            </div>
+        </section>
+        <section class="bg-light-purple container-padding">
+            <div class="help-center__search  container-xs flex-col gap-20 text-center">
+                <h2 class="text-xl bold">Chúng tôi có thể giúp gì cho bạn?</h2>
+                <div class="help-center__input-wrapper card item-padding-10 bg-white">
+                    <input type="text" placeholder="Tìm kiếm câu hỏi, hướng dẫn từ khóa..." class="w-full border-none">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light-purple container-padding">
+            <div class="help-center__topics center-hor container-xl  flex gap-20 flex-wrap">
+                <div
+                    class="col-4 bg-white help-center__item card shadow flex-col gap-10 item-padding-20 text-center center-ver">
+                    <div class="ratio-1x1"><img class="img-icon" src="./img/icon/help-rocket.svg" alt="icon"></div>
+                    <h4 class="bold ">Bắt đầu sử dụng</h4>
+                    <p class="text-sm text-color-deactive">Hướng dẫn cơ bản cho người mới</p>
+                </div>
+                <div
+                    class="col-4 bg-white help-center__item card shadow flex-col gap-10 item-padding-20 text-center center-ver">
+                    <div class="ratio-1x1"><img class="img-icon" src="./img/icon/help-shield.svg" alt="icon"></div>
+                    <h4 class="bold ">Cài đặt SSL</h4>
+                    <p class="text-sm text-color-deactive">Cấu hình bảo mật cho website</p>
+                </div>
+                <div
+                    class="col-4 bg-white help-center__item card shadow flex-col gap-10 item-padding-20 text-center center-ver">
+                    <div class="ratio-1x1"><img class="img-icon" src="./img/icon/help-money.svg" alt="icon"></div>
+                    <h4 class="bold ">Thanh toán & Hóa đơn</h4>
+                    <p class="text-sm text-color-deactive">Quản lý giao dịch và phí dịch vụ</p>
+                </div>
+                <div
+                    class="col-4 bg-white help-center__item card shadow flex-col gap-10 item-padding-20 text-center center-ver">
+                    <div class="ratio-1x1"><img class="img-icon" src="./img/icon/help-user.svg" alt="icon"></div>
+                    <h4 class="bold ">Tài khoản</h4>
+                    <p class="text-sm text-color-deactive">Cài đặt hồ sơ và phân quyền</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light-purple container-padding">
+            <div class="help-center__faq container-xl flex-col bg-white border-radius-10 item-padding-20 gap-20">
+                <h2 class="text-lg bold">Câu hỏi thường gặp</h2>
+                <div class="ssl-faq__container flex flex-wrap gap-20">
+
+                    <div class="ssl-faq__item col-2 hover-border-primary card item-padding-20 gap-10 flex-col bg-white">
+                        <div class="flex jus-sb align-center gap-20">
+                            <span class="bold">Làm thế nào để kích hoạt SSL sau khi mua?</span>
+                            <div class="img-icon ssl-faq__btn cursor-pointer"><img src="./img/icon/chevron-down.svg"
+                                    alt="icon"></div>
+                        </div>
+                        <p class="text-sm text-color-deactive ssl-faq__des">Sau khi mua, bồ truy cập bảng điều khiển
+                            (Dashboard), chọn dịch vụ SSL đã mua và nhấn "Kích hoạt". Sau đó, bồ cần cung cấp CSR
+                            (Certificate Signing Request) từ máy chủ để bắt đầu quá trình xác thực.</p>
+                    </div>
+
+                    <div class="ssl-faq__item col-2 hover-border-primary card item-padding-20 gap-10 flex-col bg-white">
+                        <div class="flex jus-sb align-center gap-20">
+                            <span class="bold">Tôi có thể hoàn tiền nếu không hài lòng với dịch vụ?</span>
+                            <div class="img-icon ssl-faq__btn cursor-pointer"><img src="./img/icon/chevron-down.svg"
+                                    alt="icon"></div>
+                        </div>
+                        <p class="text-sm text-color-deactive ssl-faq__des">Có, chính sách của chúng tôi cho phép bồ
+                            hoàn tiền trong vòng 30 ngày kể từ ngày đăng ký nếu dịch vụ không đáp ứng được yêu cầu kỹ
+                            thuật hoặc bồ không hài lòng về trải nghiệm sử dụng.</p>
+                    </div>
+
+                    <div class="ssl-faq__item col-2 hover-border-primary card item-padding-20 gap-10 flex-col bg-white">
+                        <div class="flex jus-sb align-center gap-20">
+                            <span class="bold">Hóa đơn VAT sẽ được xuất như thế nào?</span>
+                            <div class="img-icon ssl-faq__btn cursor-pointer"><img src="./img/icon/chevron-down.svg"
+                                    alt="icon"></div>
+                        </div>
+                        <p class="text-sm text-color-deactive ssl-faq__des">Hóa đơn VAT điện tử sẽ được hệ thống xuất tự
+                            động dựa trên thông tin doanh nghiệp bồ đã cập nhật trong phần hồ sơ tài khoản. Hóa đơn sẽ
+                            gửi trực tiếp về email của bồ sau khi thanh toán thành công.</p>
+                    </div>
+                    <div class="ssl-faq__item col-2 hover-border-primary card item-padding-20 gap-10 flex-col bg-white">
+                        <div class="flex jus-sb align-center gap-20">
+                            <span class="bold">Tôi có thể hoàn tiền nếu không hài lòng với dịch vụ?</span>
+                            <div class="img-icon ssl-faq__btn cursor-pointer"><img src="./img/icon/chevron-down.svg"
+                                    alt="icon"></div>
+                        </div>
+                        <p class="text-sm text-color-deactive ssl-faq__des">Chính sách hoàn tiền áp dụng cho mọi dịch vụ
+                            trong vòng 30 ngày. Bồ có thể gửi yêu cầu trực tiếp qua ticket hỗ trợ để đội ngũ CSKH xử lý
+                            ngay cho bồ.</p>
+                    </div>
+                    <div class="ssl-faq__item col-2 hover-border-primary card item-padding-20 gap-10 flex-col bg-white">
+                        <div class="flex jus-sb align-center gap-20">
+                            <span class="bold">Tôi có thể hoàn tiền nếu không hài lòng với dịch vụ?</span>
+                            <div class="img-icon ssl-faq__btn cursor-pointer"><img src="./img/icon/chevron-down.svg"
+                                    alt="icon"></div>
+                        </div>
+                        <p class="text-sm text-color-deactive ssl-faq__des">Đúng vậy, chúng tôi cam kết chất lượng dịch
+                            vụ. Mọi yêu cầu hoàn tiền hợp lệ sẽ được chúng tôi giải quyết nhanh chóng trong 1-3 ngày làm
+                            việc.</p>
+                    </div>
+                    <div class="ssl-faq__item col-2 hover-border-primary card item-padding-20 gap-10 flex-col bg-white">
+                        <div class="flex jus-sb align-center gap-20">
+                            <span class="bold">Hóa đơn VAT sẽ được xuất như thế nào?</span>
+                            <div class="img-icon ssl-faq__btn cursor-pointer"><img src="./img/icon/chevron-down.svg"
+                                    alt="icon"></div>
+                        </div>
+                        <p class="text-sm text-color-deactive ssl-faq__des">Bồ chỉ cần kiểm tra kỹ thông tin MST và địa
+                            chỉ trong phần cài đặt thanh toán. Hóa đơn sẽ được gửi dưới định dạng PDF chuẩn hóa qua
+                            email của bồ.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class=" container-padding bg-light-purple">
+            <div class="help-center__cta container-xl bg-primary item-padding-40 flex flex-col center-ver gap-30 border-radius-10 text-center text-white">
+                <h2 class="bold text-color-white">Vẫn cần sự trợ giúp?</h2>
+                <p class="text-color-white container-">Đội ngũ kỹ thuật của chúng tôi luôn sẵn sàng hỗ trợ bạn giải quyết mọi vấn đề một cách
+                    nhanh chóng nhất.</p>
+                <div class="cursor-pointer flex gap-20 hover-border-primary center-ver btn-custom-fit bg-white center-hor item-padding-10 pos-rel">
+                    <div class="help-center__cta-icon ratio-1x1">
+                        <img class="img-icon" src="./img/icon/cta-phone.svg" alt="">
+                    </div>
+                    <p class="text-center full-view text-color-primary un-wrap bold">Liên hệ hỗ trợ 24/7</p>
+                    <a href="javascript:void(0)" class="link-overlay"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" bg-light-blue center-ver flex flex-col item-padding-80-0 gap-30"
+        data-include="./component/footer.html"></footer>
+    <div class="btntotop__container pos-fixed hite" data-include="./component/rolltotop.html" id="btnToTop">
+    </div>
+
+    <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer type="text/javascript" src="./js/frontend.js"></script>
+</body>
+
+</html>

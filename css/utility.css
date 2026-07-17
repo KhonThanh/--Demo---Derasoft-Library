@@ -271,6 +271,7 @@
     .col-3, .col-4, .col-5 {width: calc((100% - var(--gap)) / 2);}  
     .item-padding-20 { padding: 10px;}  
     .item-padding-30 { padding: 10px;} 
+    .item-padding-80-0{padding: 30px;}
 }
 
 @media (max-width: 600px) {

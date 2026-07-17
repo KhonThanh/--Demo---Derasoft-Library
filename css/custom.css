@@ -586,6 +586,13 @@
     display: block;
 }
 
+/* css help center */
+.help-center__cta-icon,
+.help-center__item .ratio-1x1 {
+    max-width: 32px;
+}
+
+
 /* css roll to top */
 .btntotop__container {
     position: fixed;
